@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mediaqueries.css">
 </head>
 <body>
 
-    <nav class="main-nav">
+    <nav id="main-nav">
         <div class="logo">Gabriel Gallo</div>
         <div>
             <ul class="links">
@@ -19,5 +20,21 @@
         </div>
     </nav>
 
+    <nav id="mobile-nav">
+        <div class="logo">Gabriel Gallo</div>
+        <div class="mobile-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="mobile-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <script src="script.js"></script>
 </body>
 </html>
