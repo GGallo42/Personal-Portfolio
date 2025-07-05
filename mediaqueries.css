@@ -1,4 +1,4 @@
-@media screen and (max-width:1200px) {
+/* @media screen and (max-width:1200px) {
     #main-nav {
         display: none;
     }
@@ -9,4 +9,14 @@
     }
 
 
+} */
+
+@media screen and (max-width:1200px) {
+    #main-nav {
+        display: none;
+    }
+
+    #mobile-nav {
+        display: flex;
+    }
 }
