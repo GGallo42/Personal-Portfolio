@@ -130,7 +130,7 @@ a:hover {
 section {
   padding-top: 4vh;
   height: 96vh;
-  margin: 0 10rem;
+  margin: 1rem 10rem;
   box-sizing: border-box;
   min-height: fit-content;
 }
@@ -272,12 +272,16 @@ section {
     border: .5px grey solid;
 }
 
-.about-me-header {
+.section-header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 4rem auto;
-  font-size: 1.5rem;
+  margin: 2rem auto;
+}
+
+.section-header h1 {
+  margin-top: 0.5rem;
+  font-size: 2.5rem;
 }
 
 .about-me-info {
@@ -290,12 +294,15 @@ section {
 
 .about-me-banner {
   display: flex;
+  flex-direction: row;
   gap: 2rem;
   margin: 2rem auto;
+  width: 100%;
 }
 
 .banner {
   display: flex;
+  flex: 1;
   flex-direction: column;
   text-align: center;
   border: 1px solid black;
@@ -309,6 +316,56 @@ section {
 .banner img {
   height: 2rem;
   margin-bottom: 0.5rem;
+}
+
+.arrow {
+  position: absolute;
+  right: -3.5rem;
+  bottom: 1.5rem;
+}
+
+/* EXPERIENCES */
+
+#experience {
+  position: relative;
+}
+
+.experience-details {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 2rem;
+  padding: 20px;
+  flex: 1;
+  text-align: center;
+}
+
+.exp-container {
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2.5rem;
+  justify-content: space-around;
+}
+
+article {
+  display: flex;
+  justify-content: space-around;
+  gap: 0.5rem;
+  width: 10rem;
+}
+
+.about-containers {
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  display: flex;
+}
+
+.exp-header {
+  margin-bottom: 1.5rem;
+  color: rgb(103, 118, 133);
 }
 
 
