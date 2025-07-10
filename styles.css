@@ -369,6 +369,44 @@ article {
 }
 
 
+/* PROJECTS */
+
+#projects {
+  position: relative;
+}
+
+.profile-card img {
+  width: 100%; /* Make image take full width of its container */
+  height: 300px; /* Give images a fixed height */
+  object-fit: cover; /* Crop image to cover the area without distortion */
+  border-radius: 1.5rem; /* Apply border-radius to the image itself for consistency */
+  margin-bottom: 1rem; /* Add some space below the image */
+}
+
+.projects {
+  display: flex;
+  gap: 3rem;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 2rem;
+  padding: 20px;
+  align-items: center;
+  gap: 1rem;
+  background: rgb(250, 250, 250);
+  border-color: rgb(163, 163, 163);
+}
+
+.projects-btn {
+  border-color: rgb(163, 163, 163);
+}
+
+
 
 
 
