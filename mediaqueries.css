@@ -21,4 +21,151 @@
 
 }
 
+/* --- MOBILE & TABLET BREAKPOINTS --- */
+
+@media screen and (max-width: 768px) {
+  nav, #main-nav {
+    display: none;
+  }
+  #mobile-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    height: 10vh;
+  }
+  .logo {
+    font-size: 1.5rem;
+  }
+  section {
+    margin: 0 1rem;
+    padding-top: 2vh;
+    height: auto;
+    min-height: unset;
+  }
+  .section-container,
+  .about-me-banner,
+  .about-containers,
+  .projects,
+  .contact-container {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 1.5rem !important;
+    width: 100%;
+  }
+  #profile-section {
+    flex-direction: column;
+    gap: 2rem;
+    height: auto;
+  }
+  .section__pic-container {
+    width: 180px !important;
+    height: 180px !important;
+    margin: 0 auto 1rem !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .section__pic-container img {
+    width: 180px !important;
+    height: 180px !important;
+  }
+  .about-me-img-container {
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 auto 1rem !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-me-img-container img {
+    width: 100% !important;
+    max-width: 250px;
+    height: auto !important;
+    border-radius: 1rem;
+  }
+  .about-me-text {
+    margin-left: 0 !important;
+    margin-top: 1rem;
+  }
+  .banner {
+    padding: 10px !important;
+    font-size: 1rem;
+  }
+  .arrow {
+    display: none !important;
+  }
+  .exp-container, .projects {
+    flex-direction: column !important;
+    gap: 1rem !important;
+    align-items: stretch !important;
+  }
+  article {
+    width: 100% !important;
+    justify-content: flex-start !important;
+  }
+  .profile-card img {
+    height: 180px !important;
+  }
+  .btn-container {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  .btn {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+  }
+  .section-header h1 {
+    font-size: 2rem;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .contact-container {
+    padding: 15px 5px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+  .logo {
+    font-size: 1.1rem;
+  }
+  .section__pic-container,
+  .section__pic-container img {
+    width: 120px !important;
+    height: 120px !important;
+  }
+  .about-me-img-container img {
+    max-width: 140px;
+  }
+  .section-header h1, .title {
+    font-size: 1.3rem;
+  }
+  .btn {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+  .banner {
+    font-size: 0.9rem;
+    padding: 6px !important;
+  }
+  .profile-card img {
+    height: 100px !important;
+  }
+  .contact p {
+    font-size: 1rem;
+  }
+}
+
+/* Fix typo in selector */
+.section__pic-conatiner {
+  /* Remove or override any rules here, replaced by .section__pic-container */
+  display: unset !important;
+}
+
 
