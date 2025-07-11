@@ -4,11 +4,6 @@
     margin-bottom: 6rem;
   }
   
-  .about-me-banner,
-  .about-container,
-  .projects {
-    flex-wrap: wrap;
-  }
 
 }
 
@@ -22,48 +17,7 @@
         display: flex;
     }
 
-    #profile-section, 
-    .section__pic-conatiner {
-      display: block;
-    }
-
-    section,
-    .section-container {
-      height: fit-content;
-    }
-
-    section {
-      margin: 0 5%;
-    }
-
-
-    #experience,
-  .experience-details-container {
-    margin-top: 2rem;
-  }
-
-  .arrow {
-    display: none;
-  }
-
-  section,
-  .section-container {
-    height: fit-content;
-  }
-
-  section {
-    margin: 0 5%;
-  }
-
-  .section__pic-container {
-    width: 275px;
-    height: 275px;
-    margin: 0 auto 2rem;
-  }
-
-  .about-containers {
-    margin-top: 0;
-  }
+  
 
 }
 
