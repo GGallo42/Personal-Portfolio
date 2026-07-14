@@ -3,254 +3,265 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
+    <title>Gabriel Gallo | Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="mediaqueries.css">
-    <link rel="icon" href="/assets/profile-photo.jpg">
+    <link rel="icon" href="assets/profile-photo.jpg">
 </head>
 <body>
+    <div class="background-orb orb-one"></div>
+    <div class="background-orb orb-two"></div>
 
-    <nav id="main-nav">
-        <div class="logo">Gabriel Gallo</div>
-        <div>
-            <ul class="links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+    <header class="site-header">
+        <nav id="main-nav">
+            <a class="logo" href="#profile-section">Gabriel Gallo</a>
+            <div>
+                <ul class="links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
 
-    <nav id="mobile-nav">
-        <div class="logo">Gabriel Gallo</div>
-        <div class="mobile-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="mobile-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-            </div>
-        </div>
-    </nav>
-
-    <section id="profile-section">
-        <div class="section__pic-container">
-            <img src="/assets/profile-photo.jpg" alt="Gabriel Gallo">
-        </div>
-        <div class="section__text">
-            <p class="section__text__p1">Hi my name is </p>
-            <h1 class="title">Gabriel Gallo</h1>
-            <p class="section__text__p2">Electrial Engineering and Computer Science Student</p>
-            <div class="btn-container">
-                <button onclick="window.open('./assets/Gabriel_Gallo_Resume_2025.pdf')" class="btn btn-color-2">Download CV</button>
-                <button onclick="location.href='./#contact'" class="btn btn-color-1">Contact Me</button>
-            </div>
-            <div class="socials-container">
-                <button class="socials-btn">
-                    <img src="/assets/linkedin.png" alt="LinkedIn" class="icon" onclick="location.href='https://www.linkedin.com/in/gabriel-gallo-9ba080272/'">
-                </button>
-                <button class="socials-btn">
-                    <img src="/assets/github.png" alt="Github" class="icon" onclick="location.href='https://github.com/GGallo42'">
-                </button>
-            </div>
-        </div>
-    </section>
-
-    <section id="about">
-        <div class="section-header">
-        <p>Here's Some More</p>
-        <h1>About Me</h1>
-        </div>
-
-        <div class="section-container">
-            <div class="about-me-img-container">
-                <img src="/assets/group-photo.jpg" alt="About Gabriel Gallo">
-            </div>
-            <div class="about-me-text">
-                <div class="about-me-banner">
-                    <div class="banner">
-                    <img src="/assets/experience.png" alt="Experience">
-                    <h3>Experience</h3>
-                    <p>2+ years freelance work.</p>
-                    </div>
-                    <div class="banner">
-                    <img src="/assets/book.png" alt="Education">
-                    <h3>Education</h3>
-                    <p>B.S Electrial Engineering and Computer Science <br> UC Berkeley</p>
-                    </div>
+        <nav id="mobile-nav">
+            <a class="logo" href="#profile-section">Gabriel Gallo</a>
+            <div class="mobile-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
-                <div class="about-me-paragraph">
-                    <p>Hello! My name is Gabriel Gallo, and I’m a senior studying Electrical Engineering and Computer Science at UC Berkeley. I’m currently passionate about web development and artificial intelligence, with strong interests in related fields such as robotics and machine learning. I’m eager to find opportunities where I can continue learning and apply my skills in real-world settings. I enjoy tackling challenges and always strive to rise to the occasion.</p>
+                <div class="mobile-links">
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
                 </div>
             </div>
-        </div>
+        </nav>
+    </header>
 
-        <img src="/assets/down-arrow.png" alt="Next Section" onclick="location.href='./#experience'" class="arrow icon">
-    </section>
-
-    <section id="experience">
-        <div class="section-header">
-        <p>Here's Some Info On My</p>
-        <h1>Experience</h1>
-        </div>
-
-        <div class="section-container">
-            <div class="about-containers">
-                <div class="experience-details">
-                    <h3 class="exp-header">Languages</h3>
-                    <div class="exp-container">
-                        <article>
-                            <img src="/assets/check.png" alt="" class="icon">
-                            <div>
-                                <h3>HTML</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="/assets/check.png" alt="" class="icon">
-                            <div>
-                                <h3>CSS</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="/assets/check.png" alt="" class="icon">
-                            <div>
-                                <h3>Python</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="/assets/check.png" alt="" class="icon">
-                            <div>
-                                <h3>Java</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="/assets/check.png" alt="" class="icon">
-                            <div>
-                                <h3>SQL</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="/assets/check.png" alt="" class="icon">
-                            <div>
-                                <h3>JavaScript</h3>
-                            </div>
-                        </article>
-                    </div>
+    <main>
+        <section id="profile-section" class="hero reveal">
+            <div class="hero-copy">
+                <p class="eyebrow">Hi my name is </p>
+                <h1 class="title">Gabriel Gallo</h1>
+                <p class="section__text__p2">Electrial Engineering and Computer Science Student</p>
+                <div class="btn-container">
+                    <button onclick="window.open('./assets/Gabriel_Gallo_Resume_2025.pdf')" class="btn btn-color-2">Download CV</button>
+                    <button onclick="location.href='./#contact'" class="btn btn-color-1">Contact Me</button>
                 </div>
+                <div class="socials-container">
+                    <button class="socials-btn">
+                        <img src="assets/linkedin.png" alt="LinkedIn" class="icon" onclick="location.href='https://www.linkedin.com/in/gabriel-gallo-9ba080272/'">
+                    </button>
+                    <button class="socials-btn">
+                        <img src="assets/github.png" alt="Github" class="icon" onclick="location.href='https://github.com/GGallo42'">
+                    </button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="portrait-card">
+                    <img src="assets/profile-photo.jpg" alt="Gabriel Gallo">
+                </div>
+                <div class="floating-card">
+                    <span>2+ years freelance</span>
+                    <strong>Building thoughtful digital experiences</strong>
+                </div>
+            </div>
+        </section>
 
-                <div class="experience-details">
-                    <h3 class="exp-header">Tools and Frameworks</h3>
-                    <div class="exp-container">
-                        <article>
-                            <img src="/assets/check.png" alt="" class="icon">
-                            <div>
-                                <h3>Git</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="/assets/check.png" alt="" class="icon">
-                            <div>
-                                <h3>Django</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="/assets/check.png" alt="" class="icon">
-                            <div>
-                                <h3>PostgreSQL</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="/assets/check.png" alt="" class="icon">
-                            <div>
-                                <h3>Figma Design</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="/assets/check.png" alt="" class="icon">
-                            <div>
-                                <h3>Flutter</h3>
-                            </div>
-                        </article>
+        <section id="about" class="reveal">
+            <div class="section-header">
+                <p>Here's Some More</p>
+                <h1>About Me</h1>
+            </div>
+
+            <div class="section-container about-grid">
+                <div class="about-visual">
+                    <img src="assets/group-photo.jpg" alt="About Gabriel Gallo">
+                    <div class="visual-pill">UC Berkeley</div>
+                </div>
+                <div class="about-content">
+                    <div class="about-me-banner">
+                        <div class="banner">
+                            <img src="assets/experience.png" alt="Experience">
+                            <h3>Experience</h3>
+                            <p>2+ years freelance work.</p>
+                        </div>
+                        <div class="banner">
+                            <img src="assets/book.png" alt="Education">
+                            <h3>Education</h3>
+                            <p>B.S Electrial Engineering and Computer Science <br> UC Berkeley</p>
+                        </div>
+                    </div>
+                    <div class="about-me-paragraph">
+                        <p>Hello! My name is Gabriel Gallo, and I’m a senior studying Electrical Engineering and Computer Science at UC Berkeley. I’m currently passionate about web development and artificial intelligence, with strong interests in related fields such as robotics and machine learning. I’m eager to find opportunities where I can continue learning and apply my skills in real-world settings. I enjoy tackling challenges and always strive to rise to the occasion.</p>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <img src="/assets/down-arrow.png" alt="Next Section" onclick="location.href='./#projects'" class="arrow icon">
-    </section>
+            <img src="assets/down-arrow.png" alt="Next Section" onclick="location.href='./#experience'" class="arrow icon">
+        </section>
 
-    <section id="projects">
-        <div class="section-header">
-        <p>Check Out My</p>
-        <h1>Projects</h1>
-        </div>
+        <section id="experience" class="reveal">
+            <div class="section-header">
+                <p>Here's Some Info On My</p>
+                <h1>Experience</h1>
+            </div>
 
-        <div class="section-container">
-            <div class="projects">
-                <div class="profile-card">
-                    <img src="/assets/icon.png" alt="Project One">
-                    <h2>IBD Digest</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 projects-btn" onclick="location.href='https://apps.apple.com/us/app/the-ibd-digest/id6473455443'">
-                            iOS
-                        </button>
-                        <button class="btn btn-color-2 projects-btn" onclick="location.href='https://play.google.com/store/apps/details?id=com.unifibd.app'">
-                            Android
-                        </button>
+            <div class="section-container">
+                <div class="about-containers">
+                    <div class="experience-details">
+                        <h3 class="exp-header">Languages</h3>
+                        <div class="exp-container">
+                            <article>
+                                <img src="assets/check.png" alt="" class="icon">
+                                <div>
+                                    <h3>HTML</h3>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="assets/check.png" alt="" class="icon">
+                                <div>
+                                    <h3>CSS</h3>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="assets/check.png" alt="" class="icon">
+                                    <div>
+                                        <h3>Python</h3>
+                                    </div>
+                            </article>
+                            <article>
+                                <img src="assets/check.png" alt="" class="icon">
+                                <div>
+                                    <h3>Java</h3>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="assets/check.png" alt="" class="icon">
+                                <div>
+                                    <h3>SQL</h3>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="assets/check.png" alt="" class="icon">
+                                <div>
+                                    <h3>JavaScript</h3>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+
+                    <div class="experience-details">
+                        <h3 class="exp-header">Tools and Frameworks</h3>
+                        <div class="exp-container">
+                            <article>
+                                <img src="assets/check.png" alt="" class="icon">
+                                <div>
+                                    <h3>Git</h3>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="assets/check.png" alt="" class="icon">
+                                <div>
+                                    <h3>Django</h3>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="assets/check.png" alt="" class="icon">
+                                <div>
+                                    <h3>PostgreSQL</h3>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="assets/check.png" alt="" class="icon">
+                                <div>
+                                    <h3>Figma Design</h3>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="assets/check.png" alt="" class="icon">
+                                <div>
+                                    <h3>Flutter</h3>
+                                </div>
+                            </article>
+                        </div>
                     </div>
                 </div>
-                <div class="profile-card">
-                    <img src="/assets/TurtleBot.png" alt="TurtleBot">
-                    <h2>TurtleBot Interceptor</h2>
-                    <div class="btn-container ">
-                        <button class="btn btn-color-2 projects-btn" onclick="location.href='https://biancanev.github.io/eecs106a-finalproject/website/index.html'">
-                            Website
-                        </button>
+            </div>
+
+            <img src="assets/down-arrow.png" alt="Next Section" onclick="location.href='./#projects'" class="arrow icon">
+        </section>
+
+        <section id="projects" class="reveal">
+            <div class="section-header">
+                <p>Check Out My</p>
+                <h1>Projects</h1>
+            </div>
+
+            <div class="section-container">
+                <div class="projects">
+                    <div class="profile-card">
+                        <img src="assets/icon.png" alt="Project One">
+                        <div class="card-content">
+                            <h2>IBD Digest</h2>
+                            <div class="btn-container">
+                                <button class="btn btn-color-2 projects-btn" onclick="location.href='https://apps.apple.com/us/app/the-ibd-digest/id6473455443'">iOS</button>
+                                <button class="btn btn-color-2 projects-btn" onclick="location.href='https://play.google.com/store/apps/details?id=com.unifibd.app'">Android</button>
+                            </div>
+                        </div>
                     </div>
-                </div>         
-            </div>
-        </div>
-
-        <img src="/assets/down-arrow.png" alt="Next Section" onclick="location.href='./#contact'" class="arrow icon">
-    </section>
-
-    <section id="contact">
-        <div class="section-header">
-        <p>Feel Free To Reach Out</p>
-        <h1>Contact Me</h1>
-        </div>
-
-        <div class="section-container">
-            <div class="contact-container">
-                <div class="contact">
-                    <img src="/assets/email.png" alt="Email" class="icon">
-                    <p><a href="mailto:gabriel.gallo.jr@gmail.com">gabriel.gallo.jr@gmail.com</a></p>
-                </div>
-                <div class="contact">
-                    <img src="/assets/linkedin.png" alt="LinkedIn" class="icon">
-                    <p><a href="https://www.linkedin.com/in/gabriel-gallo-9ba080272/">LinkedIn</a></p>
+                    <div class="profile-card">
+                        <img src="assets/TurtleBot.png" alt="TurtleBot">
+                        <div class="card-content">
+                            <h2>TurtleBot Interceptor</h2>
+                            <div class="btn-container">
+                                <button class="btn btn-color-2 projects-btn" onclick="location.href='https://biancanev.github.io/eecs106a-finalproject/website/index.html'">Website</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+
+            <img src="assets/down-arrow.png" alt="Next Section" onclick="location.href='./#contact'" class="arrow icon">
+        </section>
+
+        <section id="contact" class="reveal">
+            <div class="section-header">
+                <p>Feel Free To Reach Out</p>
+                <h1>Contact Me</h1>
+            </div>
+
+            <div class="section-container">
+                <div class="contact-container">
+                    <div class="contact">
+                        <img src="assets/email.png" alt="Email" class="icon">
+                        <p><a href="mailto:gabriel.gallo.jr@gmail.com">gabriel.gallo.jr@gmail.com</a></p>
+                    </div>
+                    <div class="contact">
+                        <img src="assets/linkedin.png" alt="LinkedIn" class="icon">
+                        <p><a href="https://www.linkedin.com/in/gabriel-gallo-9ba080272/">LinkedIn</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer>
-            <nav>
-                <div>
-                    <ul class="links footer-links">
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#experience">Experience</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </nav>
+        <nav>
+            <div>
+                <ul class="links footer-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
     </footer>
 
     <script src="script.js"></script>
