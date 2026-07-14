@@ -39,6 +39,14 @@
     padding: 3.5rem 1rem 3rem;
   }
 
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-me-dashboard {
+    grid-template-columns: 1fr;
+  }
+
   .about-me-banner,
   .about-containers,
   .projects,
@@ -55,8 +63,14 @@
     padding: 1rem;
   }
 
-  article {
+  .tab,
+  .btn {
     width: 100%;
+  }
+
+  .tab {
+    padding: 0.95rem 1rem;
+    font-size: 0.95rem;
   }
 
   .btn-container {
@@ -64,7 +78,7 @@
     align-items: stretch;
   }
 
-  .btn {
+  article {
     width: 100%;
   }
 
