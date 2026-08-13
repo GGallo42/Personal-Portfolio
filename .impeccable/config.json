@@ -1,0 +1,77 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "overused-font",
+        "value": "montserrat",
+        "createdAt": "2026-08-12T22:54:04.385Z",
+        "reason": "User confirmed Montserrat is intentional"
+      },
+      {
+        "rule": "codex-grid-background",
+        "value": "*",
+        "files": [
+          "styles.css"
+        ],
+        "createdAt": "2026-08-12T22:54:13.085Z",
+        "reason": "User confirmed the circuit-board dot-grid texture is intentional (core to the Late-Night Build Session concept)"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#101632",
+        "createdAt": "2026-08-12T22:55:46.142Z",
+        "reason": "User confirmed #101632 is intentional (background gradient stop)"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#121b37",
+        "createdAt": "2026-08-12T22:55:46.209Z",
+        "reason": "User confirmed #121b37 is intentional (background gradient stop)"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "1rem",
+        "createdAt": "2026-08-12T22:55:46.277Z",
+        "reason": "User confirmed 1rem is intentional (nav link / mobile menu link utility size)"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "1.25rem",
+        "createdAt": "2026-08-12T22:55:46.343Z",
+        "reason": "User confirmed 1.25rem is intentional (logo utility size)"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "1.2rem",
+        "createdAt": "2026-08-12T23:02:01.725Z",
+        "reason": "Hero lead paragraph — the documented upper end of the Body role range (1.12-1.2rem) in DESIGN.md"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "1.05rem",
+        "createdAt": "2026-08-12T23:02:01.795Z",
+        "reason": "Experience sub-section heading — the documented lower end of the Title role range (1.05-1.3rem) in DESIGN.md"
+      },
+      {
+        "rule": "design-system-radius",
+        "value": "1.5rem",
+        "createdAt": "2026-08-12T23:02:01.864Z",
+        "reason": "Nested Inset Rule: portrait-card image radius, derived from its 2rem parent"
+      },
+      {
+        "rule": "design-system-radius",
+        "value": "1.35rem",
+        "createdAt": "2026-08-12T23:02:01.934Z",
+        "reason": "Nested Inset Rule: about-visual image radius, derived from its 2rem parent"
+      },
+      {
+        "rule": "design-system-radius",
+        "value": "1.2rem",
+        "createdAt": "2026-08-12T23:02:02.011Z",
+        "reason": "Nested Inset Rule: profile-card image radius, derived from its 1.7rem parent"
+      }
+    ]
+  }
+}

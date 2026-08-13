@@ -1,0 +1,298 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-08-12T00:00:00Z",
+  "title": "Design System: Field Notebook No. 001",
+  "extensions": {
+    "colorMeta": {
+      "pad": {
+        "role": "neutral",
+        "displayName": "Drafting Stock",
+        "canonical": "#17171a",
+        "tonalRamp": ["#0a0a0c", "#101012", "#17171a", "#202024", "#2c2c31", "#4a4a52", "#8b8b93", "#d6d6da"]
+      },
+      "pad-lift": {
+        "role": "neutral",
+        "displayName": "Lifted Stock",
+        "canonical": "#202024",
+        "tonalRamp": ["#0a0a0c", "#101012", "#17171a", "#202024", "#2c2c31", "#4a4a52", "#8b8b93", "#d6d6da"]
+      },
+      "pad-sink": {
+        "role": "neutral",
+        "displayName": "Sunk Stock",
+        "canonical": "#101012",
+        "tonalRamp": ["#050506", "#0a0a0c", "#101012", "#17171a", "#202024", "#3a3a41", "#7b7b84", "#cfcfd4"]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Bone Lead",
+        "canonical": "#f0ece2",
+        "tonalRamp": ["#26241f", "#3d3a33", "#57534a", "#746f63", "#989285", "#b8b2a5", "#d5d0c4", "#f0ece2"]
+      },
+      "ink-soft": {
+        "role": "neutral",
+        "displayName": "Soft Lead",
+        "canonical": "#a29c90",
+        "tonalRamp": ["#1c1a17", "#2e2b26", "#454138", "#5e594e", "#7a7466", "#a29c90", "#c4bfb4", "#e3e0d8"]
+      },
+      "oxblood": {
+        "role": "secondary",
+        "displayName": "Oxblood Bookcloth",
+        "canonical": "#5a1f27",
+        "tonalRamp": ["#1a080a", "#2c0e12", "#40151a", "#5a1f27", "#762b35", "#a04653", "#c98089", "#eac4c9"]
+      },
+      "cloth-ink": {
+        "role": "neutral",
+        "displayName": "Cloth Ink",
+        "canonical": "#f4eee4",
+        "tonalRamp": ["#27251f", "#3e3b33", "#58544a", "#767064", "#9a9487", "#bbb5a8", "#d8d3c8", "#f4eee4"]
+      },
+      "pen": {
+        "role": "primary",
+        "displayName": "Correction Pen",
+        "canonical": "#ef6a5c",
+        "tonalRamp": ["#2c0f0b", "#4a1a14", "#6d2820", "#94382c", "#c04f3f", "#ef6a5c", "#f79a90", "#fccdc7"]
+      },
+      "accent-text": {
+        "role": "primary",
+        "displayName": "Accent Text",
+        "canonical": "#ef6a5c",
+        "tonalRamp": ["#2c0f0b", "#4a1a14", "#6d2820", "#94382c", "#c04f3f", "#ef6a5c", "#f79a90", "#fccdc7"]
+      },
+      "grid-minor": {
+        "role": "neutral",
+        "displayName": "Graticule, Minor",
+        "canonical": "rgba(196, 206, 226, 0.09)",
+        "tonalRamp": ["rgba(196,206,226,0.03)", "rgba(196,206,226,0.06)", "rgba(196,206,226,0.09)", "rgba(196,206,226,0.12)", "rgba(196,206,226,0.18)", "rgba(196,206,226,0.28)", "rgba(196,206,226,0.5)", "rgba(196,206,226,0.85)"]
+      },
+      "grid-major": {
+        "role": "neutral",
+        "displayName": "Graticule, Major",
+        "canonical": "rgba(196, 206, 226, 0.18)",
+        "tonalRamp": ["rgba(196,206,226,0.03)", "rgba(196,206,226,0.06)", "rgba(196,206,226,0.09)", "rgba(196,206,226,0.12)", "rgba(196,206,226,0.18)", "rgba(196,206,226,0.28)", "rgba(196,206,226,0.5)", "rgba(196,206,226,0.85)"]
+      },
+      "margin-rule": {
+        "role": "primary",
+        "displayName": "Margin Rule",
+        "canonical": "rgba(239, 106, 92, 0.48)",
+        "tonalRamp": ["rgba(239,106,92,0.08)", "rgba(239,106,92,0.14)", "rgba(239,106,92,0.24)", "rgba(239,106,92,0.36)", "rgba(239,106,92,0.48)", "rgba(239,106,92,0.64)", "rgba(239,106,92,0.82)", "#ef6a5c"]
+      },
+      "rule": {
+        "role": "primary",
+        "displayName": "Section Rule",
+        "canonical": "rgba(239, 106, 92, 0.24)",
+        "tonalRamp": ["rgba(239,106,92,0.08)", "rgba(239,106,92,0.14)", "rgba(239,106,92,0.24)", "rgba(239,106,92,0.36)", "rgba(239,106,92,0.48)", "rgba(239,106,92,0.64)", "rgba(239,106,92,0.82)", "#ef6a5c"]
+      },
+      "rule-soft": {
+        "role": "neutral",
+        "displayName": "Hair Rule",
+        "canonical": "rgba(240, 236, 226, 0.14)",
+        "tonalRamp": ["rgba(240,236,226,0.05)", "rgba(240,236,226,0.09)", "rgba(240,236,226,0.14)", "rgba(240,236,226,0.22)", "rgba(240,236,226,0.34)", "rgba(240,236,226,0.52)", "rgba(240,236,226,0.74)", "#f0ece2"]
+      },
+      "tape": {
+        "role": "tertiary",
+        "displayName": "Gummed Tape",
+        "canonical": "rgba(216, 206, 178, 0.42)",
+        "tonalRamp": ["#292518", "#3f3925", "#585134", "#746c47", "#968d61", "#b6ac82", "#d8ceb2", "#efe9d6"]
+      },
+      "tape-edge": {
+        "role": "tertiary",
+        "displayName": "Tape Edge",
+        "canonical": "rgba(184, 172, 140, 0.36)",
+        "tonalRamp": ["#22200f", "#38341c", "#4f4a2b", "#6b653d", "#8c8455", "#aca476", "#cbc3a1", "#e8e3cd"]
+      },
+      "print-mat": {
+        "role": "tertiary",
+        "displayName": "Print Mat",
+        "canonical": "#e8e4d8",
+        "tonalRamp": ["#25231b", "#3a372c", "#54503f", "#716c56", "#948f76", "#b6b199", "#d3cfbc", "#e8e4d8"]
+      },
+      "print-edge": {
+        "role": "neutral",
+        "displayName": "Print Edge",
+        "canonical": "rgba(0, 0, 0, 0.5)",
+        "tonalRamp": ["rgba(0,0,0,0.9)", "rgba(0,0,0,0.75)", "rgba(0,0,0,0.6)", "rgba(0,0,0,0.5)", "rgba(0,0,0,0.36)", "rgba(0,0,0,0.24)", "rgba(0,0,0,0.14)", "rgba(0,0,0,0.06)"]
+      },
+      "cloth-edge": {
+        "role": "neutral",
+        "displayName": "Cloth Edge",
+        "canonical": "rgba(0, 0, 0, 0.6)",
+        "tonalRamp": ["rgba(0,0,0,0.9)", "rgba(0,0,0,0.75)", "rgba(0,0,0,0.6)", "rgba(0,0,0,0.5)", "rgba(0,0,0,0.36)", "rgba(0,0,0,0.24)", "rgba(0,0,0,0.14)", "rgba(0,0,0,0.06)"]
+      },
+      "stamp-wash": {
+        "role": "neutral",
+        "displayName": "Stamp Wash",
+        "canonical": "rgba(23, 23, 26, 0.4)",
+        "tonalRamp": ["rgba(23,23,26,0.9)", "rgba(23,23,26,0.75)", "rgba(23,23,26,0.6)", "rgba(23,23,26,0.5)", "rgba(23,23,26,0.4)", "rgba(23,23,26,0.28)", "rgba(23,23,26,0.16)", "rgba(23,23,26,0.06)"]
+      }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "The name on the cover, and nothing else. Archivo drafted at wdth 112." },
+      "heading": { "displayName": "Heading", "purpose": "One per sheet. Archivo at wdth 108." },
+      "title": { "displayName": "Title", "purpose": "Log record titles and the mobile notebook mark. Archivo at wdth 106." },
+      "subheading": { "displayName": "Subheading", "purpose": "In-body section heads inside a sheet. Archivo at wdth 104." },
+      "lede": { "displayName": "Lede", "purpose": "The one cover paragraph a scanner will actually read. Full ink, max 46ch." },
+      "body": { "displayName": "Body", "purpose": "All prose, max 68ch. Drops to 1rem below 460px." },
+      "designator": { "displayName": "Designator", "purpose": "Page and entry numbers in the margin rail. Martian Mono, pen, uppercase." },
+      "label": { "displayName": "Label", "purpose": "Spec terms, contact and signoff labels, stamp lines, colophon. Martian Mono, soft lead." },
+      "data": { "displayName": "Measured Data", "purpose": "Dates, stack lines, captions, witness line, inventory rows. Martian Mono, soft lead." }
+    },
+    "shadows": [
+      { "name": "binding", "value": "3px 0 14px rgba(0, 0, 0, 0.22)", "purpose": "The bookcloth spine casting right onto the page." },
+      { "name": "tab", "value": "-2px 2px 8px rgba(0, 0, 0, 0.2)", "purpose": "Index tabs casting back onto the page edge." },
+      { "name": "print", "value": "0 12px 26px rgba(0, 0, 0, 0.34)", "purpose": "A taped-in photographic print; the deepest shadow in the system." },
+      { "name": "tape", "value": "0 1px 3px rgba(0, 0, 0, 0.28)", "purpose": "The gummed tape strip, barely off the surface." },
+      { "name": "lift", "value": "0 6px 14px rgba(0, 0, 0, 0.28)", "purpose": "Button hover and focus only, paired with translateY(-2px)." },
+      { "name": "band", "value": "0 3px 14px rgba(0, 0, 0, 0.35)", "purpose": "The sticky mobile bookcloth band below 1000px." },
+      { "name": "menu", "value": "0 14px 30px rgba(0, 0, 0, 0.3)", "purpose": "The dropped mobile contents menu." }
+    ],
+    "motion": [
+      { "name": "ease", "value": "cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "The system easing for every transition: tabs, buttons, links, ink draw." },
+      { "name": "stamp-land", "value": "cubic-bezier(0.2, 0.9, 0.28, 1)", "purpose": "The property stamp striking the page once, 560ms after a 260ms delay." },
+      { "name": "duration-state", "value": "200-260ms", "purpose": "Link, tab and button state changes." },
+      { "name": "duration-draw", "value": "900ms", "purpose": "One ink stroke drawing itself in via stroke-dashoffset." },
+      { "name": "stroke-cascade", "value": "min(length * 0.45, 90)ms", "purpose": "Per-stroke delay accumulated across a figure so the pen speed stays believable." },
+      { "name": "draw-trigger", "value": "IntersectionObserver threshold 0.22, rootMargin 0px 0px -8% 0px, unobserve after first entry", "purpose": "Every figure draws exactly once and never re-animates." }
+    ],
+    "breakpoints": [
+      { "name": "wide", "value": "1180px" },
+      { "name": "fold", "value": "1000px" },
+      { "name": "single", "value": "720px" },
+      { "name": "narrow", "value": "460px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The pen-filled primary action — resume download. Sentence case, cut square, always with an authored stroke glyph.",
+      "html": "<a class=\"ds-btn ds-btn-primary\" href=\"#\">Download resume<svg class=\"ds-btn-glyph\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M12 3v12M12 15l-4.5-4.5M12 15l4.5-4.5M4 20h16\"/></svg></a>",
+      "css": ".ds-btn { display: inline-flex; align-items: center; gap: 0.6rem; padding: 0.92rem 1.35rem; border: 2px solid var(--pen, #ef6a5c); border-radius: 2px; background: var(--pen, #ef6a5c); color: var(--pad, #17171a); font-family: \"Archivo\", Helvetica, Arial, sans-serif; font-size: 0.86rem; font-weight: 700; font-variation-settings: \"wdth\" 100; letter-spacing: 0.02em; text-decoration: none; cursor: pointer; transition: background-color 220ms cubic-bezier(0.16,1,0.3,1), border-color 220ms cubic-bezier(0.16,1,0.3,1), color 220ms cubic-bezier(0.16,1,0.3,1), transform 220ms cubic-bezier(0.16,1,0.3,1), box-shadow 220ms cubic-bezier(0.16,1,0.3,1); } .ds-btn:hover, .ds-btn:focus-visible { background: var(--ink, #f0ece2); border-color: var(--ink, #f0ece2); color: var(--pad, #17171a); transform: translateY(-2px); box-shadow: 0 6px 14px rgba(0,0,0,0.28); } .ds-btn:focus-visible { outline: 2px solid var(--pen, #ef6a5c); outline-offset: 3px; } .ds-btn-glyph { width: 1rem; height: 1rem; fill: none; stroke: currentColor; stroke-width: 1.9; stroke-linecap: round; stroke-linejoin: round; }"
+    },
+    {
+      "name": "Outline Button",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "The bone-outlined secondary action; the default for evidence links out to a store or a write-up. A --sm size drops to 1.5px borders.",
+      "html": "<a class=\"ds-btn-outline\" href=\"#\">Write to me</a> <a class=\"ds-btn-outline ds-btn-sm\" href=\"#\">App Store</a>",
+      "css": ".ds-btn-outline { display: inline-flex; align-items: center; gap: 0.6rem; padding: 0.92rem 1.35rem; border: 2px solid var(--ink, #f0ece2); border-radius: 2px; background: transparent; color: var(--ink, #f0ece2); font-family: \"Archivo\", Helvetica, Arial, sans-serif; font-size: 0.86rem; font-weight: 700; font-variation-settings: \"wdth\" 100; letter-spacing: 0.02em; text-decoration: none; cursor: pointer; transition: background-color 220ms cubic-bezier(0.16,1,0.3,1), color 220ms cubic-bezier(0.16,1,0.3,1), transform 220ms cubic-bezier(0.16,1,0.3,1), box-shadow 220ms cubic-bezier(0.16,1,0.3,1); } .ds-btn-outline:hover, .ds-btn-outline:focus-visible { background: var(--ink, #f0ece2); border-color: var(--ink, #f0ece2); color: var(--pad, #17171a); transform: translateY(-2px); box-shadow: 0 6px 14px rgba(0,0,0,0.28); } .ds-btn-outline:focus-visible { outline: 2px solid var(--pen, #ef6a5c); outline-offset: 3px; } .ds-btn-sm { padding: 0.6rem 0.95rem; font-size: 0.78rem; border-width: 1.5px; }"
+    },
+    {
+      "name": "Index Tabs",
+      "kind": "nav",
+      "refersTo": "tab-index",
+      "description": "The notebook's navigation: oxblood bookcloth tabs projecting from the right edge, radiused on their leading corners only. The open tab lifts to pad-lift; a persistent pen action tab carries the resume.",
+      "html": "<nav class=\"ds-tabs\" aria-label=\"Sections\"><a class=\"ds-tab\" href=\"#a\"><span>About</span></a><a class=\"ds-tab ds-tab-current\" href=\"#b\"><span>Log</span></a><a class=\"ds-tab ds-tab-action\" href=\"#c\"><span>Resume</span></a></nav>",
+      "css": ".ds-tabs { display: flex; flex-direction: column; gap: 6px; align-items: flex-end; } .ds-tab { display: block; padding: 1rem 0.62rem; writing-mode: vertical-rl; background: var(--oxblood, #5a1f27); color: rgba(244,238,228,0.9); font-family: \"Martian Mono\", ui-monospace, monospace; font-variation-settings: \"wdth\" 87.5; font-size: 0.63rem; font-weight: 600; letter-spacing: 0.24em; text-transform: uppercase; text-decoration: none; border: 1px solid rgba(0,0,0,0.6); border-right: none; border-radius: 4px 0 0 4px; box-shadow: -2px 2px 8px rgba(0,0,0,0.2); transition: transform 260ms cubic-bezier(0.16,1,0.3,1), background-color 260ms cubic-bezier(0.16,1,0.3,1), color 260ms cubic-bezier(0.16,1,0.3,1); } .ds-tab:hover, .ds-tab:focus-visible { transform: translateX(-6px); } .ds-tab-current { background: var(--pad-lift, #202024); color: var(--ink, #f0ece2); transform: translateX(-6px); } .ds-tab-action { background: var(--pen, #ef6a5c); margin-top: 0.9rem; }"
+    },
+    {
+      "name": "Sheet with Margin Rail",
+      "kind": "custom",
+      "refersTo": null,
+      "description": "The structural unit of the whole site: a margin rail carrying a pen designator and a soft-lead classification, separated from the body by a single red margin rule. No card, no panel.",
+      "html": "<section class=\"ds-sheet\"><div class=\"ds-margin\"><span class=\"ds-desig\">Entry 01</span><span class=\"ds-note\">Hardware</span></div><div class=\"ds-body\"><h2 class=\"ds-heading\">RISC-V 3-stage pipelined CPU</h2><p class=\"ds-p\">Rules and margins do the separating; nothing here sits in a container.</p></div></section>",
+      "css": ".ds-sheet { display: grid; grid-template-columns: 118px minmax(0, 1fr); padding: 3rem 3rem 3rem 0; border-top: 1px solid rgba(239,106,92,0.24); color: var(--ink, #f0ece2); font-family: \"Archivo\", Helvetica, Arial, sans-serif; } .ds-margin { display: flex; flex-direction: column; gap: 0.35rem; padding: 0.5rem 1.4rem 0 0; text-align: right; } .ds-desig { font-family: \"Martian Mono\", ui-monospace, monospace; font-variation-settings: \"wdth\" 87.5; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--pen, #ef6a5c); } .ds-note { font-family: \"Martian Mono\", ui-monospace, monospace; font-variation-settings: \"wdth\" 87.5; font-size: 0.62rem; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-soft, #a29c90); } .ds-body { border-left: 1px solid rgba(239,106,92,0.48); padding-left: 2.6rem; min-width: 0; } .ds-heading { margin: 0 0 1.4rem; font-size: 2.2rem; font-weight: 700; font-variation-settings: \"wdth\" 108; line-height: 1.06; letter-spacing: -0.028em; } .ds-p { margin: 0; max-width: 68ch; font-size: 1.0625rem; line-height: 1.62; color: var(--ink-soft, #a29c90); }"
+    },
+    {
+      "name": "Taped Print",
+      "kind": "card",
+      "refersTo": null,
+      "description": "The system's only 'container', and it is a physical object: a photographic print on a paper mat, tilted, held down by two CSS tape strips.",
+      "html": "<figure class=\"ds-taped\"><img src=\"data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='320'%3E%3Crect width='320' height='320' fill='%23484036'/%3E%3C/svg%3E\" alt=\"\"><figcaption>Fig. A. The undersigned.</figcaption></figure>",
+      "css": ".ds-taped { position: relative; margin: 0; padding: 1.4rem 1.2rem 0; max-width: 300px; } .ds-taped img { width: 100%; height: auto; display: block; padding: 9px; background: var(--print-mat, #e8e4d8); border: 1px solid rgba(0,0,0,0.5); box-shadow: 0 12px 26px rgba(0,0,0,0.34); transform: rotate(-1.4deg); } .ds-taped::before, .ds-taped::after { content: \"\"; position: absolute; width: 92px; height: 25px; z-index: 2; background: linear-gradient(180deg, rgba(216,206,178,0.42), rgba(184,172,140,0.36)); border-left: 1px solid rgba(255,255,255,0.35); border-right: 1px solid rgba(160,148,110,0.4); box-shadow: 0 1px 3px rgba(0,0,0,0.28); } .ds-taped::before { top: 2px; left: -14px; transform: rotate(-30deg); } .ds-taped::after { top: 8px; right: -16px; transform: rotate(26deg); } .ds-taped figcaption { margin-top: 1.1rem; font-family: \"Martian Mono\", ui-monospace, monospace; font-variation-settings: \"wdth\" 87.5; font-size: 0.63rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-soft, #a29c90); }"
+    },
+    {
+      "name": "Property Stamp",
+      "kind": "custom",
+      "refersTo": "stamp",
+      "description": "A struck rubber stamp: pen text in a double-ruled pen frame over a translucent stock wash, tilted and landed once on arrival.",
+      "html": "<p class=\"ds-stamp\"><span class=\"ds-stamp-line\">Property of</span><span class=\"ds-stamp-name\">G. Gallo</span><span class=\"ds-stamp-line\">EECS &middot; UC Berkeley</span><span class=\"ds-stamp-line\">Notebook No. 001</span></p>",
+      "css": ".ds-stamp { display: inline-flex; flex-direction: column; align-items: center; gap: 0.1rem; margin: 0; padding: 0.85rem 1.15rem; font-family: \"Martian Mono\", ui-monospace, monospace; font-variation-settings: \"wdth\" 87.5; color: var(--accent-text, #ef6a5c); background: rgba(23,23,26,0.4); border: 2px solid var(--accent-text, #ef6a5c); outline: 1px solid var(--accent-text, #ef6a5c); outline-offset: 3px; opacity: 0.82; transform: rotate(-3.2deg); animation: ds-stamp-land 560ms cubic-bezier(0.2,0.9,0.28,1) 260ms both; } .ds-stamp-line { font-size: 0.56rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; } .ds-stamp-name { margin: 0.1rem 0; font-size: 0.94rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; } @keyframes ds-stamp-land { from { opacity: 0; transform: rotate(-9deg) scale(1.16); } 62% { opacity: 0.95; } to { opacity: 0.82; transform: rotate(-3.2deg) scale(1); } }"
+    },
+    {
+      "name": "Findings List",
+      "kind": "custom",
+      "refersTo": null,
+      "description": "The lab-entry bullet: a short pen dash instead of a disc, soft-lead body, key measured figures promoted to bone bold.",
+      "html": "<ul class=\"ds-findings\"><li>Migrated the legacy iOS app to <b>Flutter</b>, consolidating both platforms into one codebase.</li><li>Cut load times by <b>30%</b> for a smoother, more responsive experience.</li></ul>",
+      "css": ".ds-findings { list-style: none; margin: 0; padding: 0; max-width: 68ch; font-family: \"Archivo\", Helvetica, Arial, sans-serif; font-size: 1.0625rem; line-height: 1.62; } .ds-findings li { position: relative; padding: 0 0 0.95rem 1.9rem; color: var(--ink-soft, #a29c90); } .ds-findings li::before { content: \"\"; position: absolute; left: 0; top: 0.82em; width: 12px; height: 1.5px; background: var(--pen, #ef6a5c); } .ds-findings b { color: var(--ink, #f0ece2); font-weight: 700; }"
+    },
+    {
+      "name": "Inventory Group",
+      "kind": "chip",
+      "refersTo": null,
+      "description": "The replacement for a logo-tile skill grid: a mono label under a heavy bone underline, dotted rows, and a pen cross-reference that promotes any item the notebook can actually show you.",
+      "html": "<section class=\"ds-inv\"><h3 class=\"ds-inv-label\">Languages</h3><ul><li><span class=\"ds-inv-name\">SystemVerilog</span><span class=\"ds-inv-ref\">E01</span></li><li><span class=\"ds-inv-name\">C / C++</span></li><li><span class=\"ds-inv-name\">Python</span><span class=\"ds-inv-ref\">E02 &middot; E03</span></li></ul></section>",
+      "css": ".ds-inv { min-width: 0; max-width: 260px; font-family: \"Martian Mono\", ui-monospace, monospace; font-variation-settings: \"wdth\" 87.5; } .ds-inv-label { margin: 0 0 0.9rem; padding-bottom: 0.55rem; border-bottom: 1.5px solid var(--ink, #f0ece2); font-size: 0.6rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink, #f0ece2); } .ds-inv ul { list-style: none; margin: 0; padding: 0; } .ds-inv li { display: flex; align-items: baseline; gap: 0.6rem; padding: 0.5rem 0; border-bottom: 1px dotted rgba(240,236,226,0.14); font-size: 0.74rem; font-weight: 500; letter-spacing: 0.03em; color: var(--ink-soft, #a29c90); } .ds-inv-name { flex: 1; min-width: 0; } .ds-inv-ref { flex: none; font-size: 0.62rem; font-weight: 700; letter-spacing: 0.08em; color: var(--pen, #ef6a5c); } .ds-inv li:has(.ds-inv-ref) .ds-inv-name { color: var(--ink, #f0ece2); }"
+    },
+    {
+      "name": "Contact Row",
+      "kind": "input",
+      "refersTo": "contact-value",
+      "description": "The label/value row that stands in for a form: a mono uppercase label against a bone value on a pen-tinted underline that goes full pen on hover and focus.",
+      "html": "<ul class=\"ds-contact\"><li><span class=\"ds-contact-label\">Email</span><a class=\"ds-contact-value\" href=\"#\">name@example.com</a></li><li><span class=\"ds-contact-label\">GitHub</span><a class=\"ds-contact-value\" href=\"#\">handle</a></li></ul>",
+      "css": ".ds-contact { list-style: none; margin: 0; padding: 0; max-width: 40rem; border-top: 1px solid rgba(240,236,226,0.14); font-family: \"Archivo\", Helvetica, Arial, sans-serif; } .ds-contact li { display: grid; grid-template-columns: 8.5rem minmax(0, 1fr); gap: 1rem; align-items: baseline; padding: 0.85rem 0; border-bottom: 1px dotted rgba(240,236,226,0.14); } .ds-contact-label { font-family: \"Martian Mono\", ui-monospace, monospace; font-variation-settings: \"wdth\" 87.5; font-size: 0.6rem; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink-soft, #a29c90); } .ds-contact-value { display: inline-block; font-size: 1.02rem; font-weight: 600; color: var(--ink, #f0ece2); text-decoration: none; border-bottom: 1px solid rgba(239,106,92,0.24); padding-bottom: 1px; transition: color 200ms cubic-bezier(0.16,1,0.3,1), border-color 200ms cubic-bezier(0.16,1,0.3,1); } .ds-contact-value:hover, .ds-contact-value:focus-visible { color: var(--pen, #ef6a5c); border-bottom-color: var(--pen, #ef6a5c); } .ds-contact-value:focus-visible { outline: 2px solid var(--pen, #ef6a5c); outline-offset: 3px; }"
+    },
+    {
+      "name": "Ink Figure",
+      "kind": "custom",
+      "refersTo": null,
+      "description": "The signature component: an authored SVG in one pen-and-ink line language — bone structure strokes, pen annotation, dashed prediction, low-opacity measured fill — that strokes itself in once on scroll.",
+      "html": "<figure class=\"ds-figure\"><svg class=\"ds-ink-figure ds-is-drawn\" viewBox=\"80 20 420 200\" role=\"img\" aria-label=\"Measured cold-start time before and after migration.\"><g class=\"ds-ink\"><path d=\"M96 30v160h330\"/></g><g class=\"ds-ink-fill\"><rect x=\"96\" y=\"52\" width=\"240\" height=\"42\"/></g><g class=\"ds-hatch\"><rect x=\"96\" y=\"112\" width=\"168\" height=\"42\"/></g><g class=\"ds-ink\"><rect x=\"96\" y=\"52\" width=\"240\" height=\"42\"/><rect x=\"96\" y=\"112\" width=\"168\" height=\"42\"/></g><g class=\"ds-annot\"><text x=\"348\" y=\"78\">before</text><text x=\"276\" y=\"138\">after migration</text></g><g class=\"ds-pen\"><path d=\"M264 168v18M336 168v18\"/><path d=\"M264 177h72\"/><text x=\"348\" y=\"181\">&minus;30%</text></g></svg><figcaption>Fig. C. Cold-start time, measured before and after the migration.</figcaption></figure>",
+      "css": ".ds-figure { margin: 0; max-width: 520px; } .ds-ink-figure { width: 100%; height: auto; overflow: visible; display: block; } .ds-ink-figure .ds-ink path, .ds-ink-figure .ds-ink rect, .ds-ink-figure .ds-ink circle, .ds-ink-figure .ds-ink line { fill: none; stroke: var(--ink, #f0ece2); stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round; } .ds-ink-figure .ds-pen path, .ds-ink-figure .ds-pen rect, .ds-ink-figure .ds-pen circle { fill: none; stroke: var(--pen, #ef6a5c); stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; } .ds-ink-figure .ds-dashed { stroke-dasharray: 8 6; } .ds-ink-figure .ds-ink-fill rect { fill: var(--ink, #f0ece2); opacity: 0.13; stroke: none; } .ds-ink-figure .ds-hatch rect { fill: var(--pen, #ef6a5c); opacity: 0.14; stroke: none; } .ds-ink-figure text { font-family: \"Martian Mono\", ui-monospace, monospace; font-variation-settings: \"wdth\" 87.5; } .ds-ink-figure .ds-annot text { fill: var(--ink-soft, #a29c90); font-size: 10px; font-weight: 500; letter-spacing: 0.06em; } .ds-ink-figure .ds-pen text { fill: var(--pen, #ef6a5c); font-size: 10.5px; font-weight: 600; letter-spacing: 0.05em; } .ds-figure figcaption { margin-top: 1rem; padding-top: 0.7rem; border-top: 1px solid rgba(240,236,226,0.14); font-family: \"Martian Mono\", ui-monospace, monospace; font-variation-settings: \"wdth\" 87.5; font-size: 0.63rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-soft, #a29c90); }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Engineering Notebook the Work Was Done In",
+    "overview": "This is a record, not a pitch. The site presents itself as a single bound notebook — No. 001, opened 2026 — laid on black drafting stock and printed with a cool graphite graticule. An oxblood bookcloth spine runs the full height of the left edge; index tabs project from the right; each screenful is a numbered sheet with a margin rail, a red margin rule and a body. Projects are Entries. Skills are an Inventory. Experience is a Log. The page closes with a countersign block waiting for a witness signature.\n\nDensity is high but never crowded, because the structure does the separating. There is not one card, panel or filled tile in the build. Every division is a rule: a 1px hairline, a dotted underline, a red margin stroke, a heavy 1.5px underline beneath an inventory label. Depth exists only where a physical object genuinely sits on top of the page — the binding, the tabs, the taped-in photographic prints, a button lifting under the cursor. Everything else is flat against the stock.\n\nThe evidence is drawn, not claimed. Five hand-authored SVG figures — a measured bar plot, a pipeline block diagram, a request-path diagram, an intercept plot, a key-sharing tree — stroke themselves in as you reach them, once, at a believable pen speed. Bone-white lead carries the structure of each drawing; the red pen carries the annotation, the finding, the one thing you are meant to notice. This world explicitly refuses the dark-glass developer portfolio: no glassmorphism, no gradient orbs, no rounded pill buttons, no logo-tile skill grid.",
+    "keyCharacteristics": [
+      "Black drafting stock under a two-density printed graticule (20px minor, 100px major)",
+      "Oxblood bookcloth binding and right-edge index tabs as the only chrome",
+      "Every sheet is margin rail + red margin rule + body; designators live in the margin, never above the heading",
+      "Rules and dotted underlines instead of cards; zero container backgrounds in the content column",
+      "Archivo with its width axis exercised for everything readable; Martian Mono strictly for designators and measured data",
+      "Hand-drawn ink figures that stroke in once on scroll",
+      "Taped-in photographic prints with CSS tape, a rubber property stamp, a witness/countersign block"
+    ],
+    "rules": [
+      { "name": "The Pen-or-Mark Rule", "body": "The pen is either the surface or the mark, never both. A pen-filled surface (primary button, Resume tab) takes pad or cloth-ink for its text; pen-coloured text only ever appears on the drafting stock. accent-text exists precisely to keep those two roles separately tunable — never collapse them.", "section": "colors" },
+      { "name": "The One Red Rule", "body": "#ef6a5c is the only saturated hue in the mark layer, and oxblood is the only saturated hue in the chrome. Do not introduce a second accent, a status palette, or a hue-coded category system. If something needs to be distinguished, distinguish it with a rule, a designator, or the mono voice.", "section": "colors" },
+      { "name": "The Printed-Grid Rule", "body": "The graticule belongs to the page and to nothing else. .page carries it; the spine, the top band, and the colophon are deliberately un-gridded, because they are not the sheet.", "section": "colors" },
+      { "name": "The Mono-Is-Data Rule", "body": "Martian Mono is reserved for designators, measured data, and labels. Never prose, never a heading, never a button, never a link a person reads as a sentence. The build enforces this with one shared selector list in styles.css — extend that list rather than reaching for the family ad hoc.", "section": "typography" },
+      { "name": "The Width-Axis Rule", "body": "Hierarchy is carried by Archivo's wdth axis as much as by size: 112 display / 108 heading / 106 title / 104 subheading / 100 body and buttons. A new role picks its width from that ramp; it does not invent a new one, and it never goes below 100 for readable text.", "section": "typography" },
+      { "name": "The Real Casing Rule", "body": "Uppercase-plus-tracking belongs to the mono voice only. Within it, measured values keep their true casing — 'MHz' is never 'MHZ', '−30%' is never re-set as a word. Readable type is never uppercased.", "section": "typography" },
+      { "name": "The No-Kicker Rule", "body": "A sheet's designator and classification live in the margin rail, beside the rule — never as a small tracked line stacked above the heading. Headings begin at the top of the body column.", "section": "typography" },
+      { "name": "The Margin Rule", "body": "Every sheet is margin rail + red rule + body. The rail is never empty of purpose and never merely decorative padding; the body never starts at the viewport edge. The rail narrows at every breakpoint (118 → 96 → 52 → 42 → 34px) but is never removed.", "section": "layout" },
+      { "name": "The Ruled-Not-Boxed Rule", "body": "Separation is done with hairlines, dotted underlines and whitespace. Nothing in the content column gets a background fill, a border box, or a padded container. If a group needs to feel distinct, give it a rule and a label, not a card.", "section": "layout" },
+      { "name": "The Object-Shadow Rule", "body": "A shadow requires a physical object. Binding, tab, print, tape, and a lifted button are the complete list. Text, figures, tables and section groups never carry one — and no shadow is ever used to imply a card that isn't there.", "section": "elevation" },
+      { "name": "The Tooth Rule", "body": "The page's material is one fixed, non-interactive noise layer over the whole viewport at 0.045 opacity, inverted so the speckle catches light the way black stock actually does. It is a single global layer — never re-applied per element.", "section": "elevation" },
+      { "name": "The Square-Corner Rule", "body": "Default radius is 0. The two exceptions (2px button, 4px tab leading edge) are the entire allowance. Never round a photograph, a figure, a table, or a surface.", "section": "shapes" },
+      { "name": "The Honest-Tilt Rule", "body": "Rotation is reserved for objects that were physically placed — a struck stamp, a taped print, a tape strip. Type, rules and figures are never tilted.", "section": "shapes" }
+    ],
+    "dos": [
+      "Do put every new section on a sheet: margin rail, red margin rule, body. The designator goes in the rail.",
+      "Do carry hierarchy on Archivo's width axis (112 / 108 / 106 / 104 / 100) alongside size and weight.",
+      "Do reserve Martian Mono at wdth 87.5 for designators, labels and measured data, and add new cases to the shared selector list rather than declaring the family inline.",
+      "Do use accent-text for red marks on the stock and pen for red surfaces, rules and strokes — keep the two roles separately addressable.",
+      "Do separate with rules: 1px hairline for sections, 1px dotted for list rows, 1.5px bone for a heavy label underline or a signature line.",
+      "Do draw new evidence as an SVG figure in the existing ink language — 1.75px bone structure, 1.6px pen annotation, round caps, 8 6 dash for anything predicted or untrusted — and mark its strokes .draw so it inherits the once-only draw-in.",
+      "Do give a wide diagram a purpose-drawn narrow layout (ink-figure--stack on a figure--dual) when horizontal scrolling would show an incomplete diagram.",
+      "Do present photographs as taped-in prints with the paper mat, and give each a Fig. caption.",
+      "Do keep the resume action reachable from every width — the pen index tab on desktop, the pen menu item and the reordered cover on mobile.",
+      "Do respect prefers-reduced-motion: figures render fully drawn, the stamp is already landed."
+    ],
+    "donts": [
+      "Don't introduce a card, panel, tile, or any filled container in the content column. pad-lift and pad-sink are for the open tab, the mobile menu, and the colophon only.",
+      "Don't add a second accent hue, a status colour set, or hue-coded categories. One pen, one bookcloth.",
+      "Don't put pen text on a pen fill, or bone text on a bone fill.",
+      "Don't set prose, headings, buttons, or link text in Martian Mono, and don't uppercase readable type.",
+      "Don't stack a small tracked kicker above a heading — that information belongs in the margin rail.",
+      "Don't round corners. 2px on a button and 4px on a tab's leading edge are the complete radius budget.",
+      "Don't attach a shadow to anything that is not a physically overlapping object, and never use one to fake a container.",
+      "Don't tilt type, rules or figures; rotation belongs to stamps, prints and tape.",
+      "Don't re-apply the paper-tooth noise or the graticule to individual elements; both are single global layers on body and .page.",
+      "Don't reintroduce icon-font glyphs or brand logo tiles for skills — the inventory's pen cross-reference is the emphasis mechanism, and every glyph in the build is an authored inline SVG path.",
+      "Don't let a figure re-animate on scroll. Each draws exactly once and is then unobserved."
+    ]
+  }
+}

@@ -1,118 +1,219 @@
-@media screen and (max-width: 1200px) {
-  #main-nav {
-    display: none;
+/* =========================================================================
+   FIELD NOTEBOOK No. 001 — responsive
+   The margin rule and its designators survive every width; the bookcloth
+   spine folds up into a top band, and the index tabs become its menu.
+   ========================================================================= */
+
+@media screen and (max-width: 1180px) {
+  :root {
+    --margin-w: 96px;
+    --page-max: 1000px;
   }
 
-  #mobile-nav {
+  .sheet { padding: 4.5rem 2rem 4.5rem 0; }
+  .sheet__body { padding-left: 2rem; }
+  .witness { padding-left: 2rem; }
+
+  .cover { gap: 2.5rem; }
+  .about { gap: 2.4rem; }
+  .split { gap: 2.2rem; }
+  .plot { grid-template-columns: minmax(0, 1fr) 165px; gap: 2rem; }
+  .inventory { gap: 2rem; }
+}
+
+/* ---- The binding folds up: spine and tabs become a top band ---- */
+@media screen and (max-width: 1000px) {
+  html { scroll-padding-top: 5.5rem; }
+
+  .spine,
+  .tabs { display: none; }
+
+  .topbar {
     display: flex;
-  }
-
-  .hero {
-    grid-template-columns: 1fr;
-    text-align: center;
-    gap: 2rem;
-  }
-
-  .hero-copy {
-    padding-right: 0;
-  }
-
-  .btn-container {
-    justify-content: center;
-  }
-
-  .socials-container {
-    justify-content: center;
-  }
-
-  .about-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .site-header {
-    padding: 0.9rem 1rem;
-  }
-
-  section {
-    padding: 3.5rem 1rem 3rem;
-  }
-
-  .about-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .about-me-dashboard {
-    grid-template-columns: 1fr;
-  }
-
-  .about-me-banner,
-  .about-containers,
-  .projects,
-  .contact-container {
-    grid-template-columns: 1fr;
-    display: grid;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    align-items: center;
+    justify-content: space-between;
     gap: 1rem;
+    padding: 0.85rem 1.25rem;
+    background-color: var(--oxblood);
+    background-image:
+      repeating-linear-gradient(90deg, rgba(255,255,255,0.045) 0 1px, transparent 1px 3px),
+      repeating-linear-gradient(0deg, rgba(0,0,0,0.10) 0 1px, transparent 1px 3px);
+    border-bottom: 1px solid var(--cloth-edge);
+    box-shadow: 0 3px 14px rgba(var(--shadow-rgb), 0.35);
   }
 
-  .banner,
-  .experience-details,
-  .profile-card,
-  .contact-container {
-    padding: 1rem;
+  .page,
+  .colophon {
+    margin-left: 0;
+    margin-right: 0;
   }
 
-  .tab,
-  .btn {
-    width: 100%;
+  :root { --margin-w: 52px; }
+
+  .sheet {
+    padding: 3.6rem 1.25rem 3.6rem 0;
   }
 
-  .tab {
-    padding: 0.95rem 1rem;
-    font-size: 0.95rem;
+  .sheet__body,
+  .witness { padding-left: 1.25rem; }
+
+  .sheet--cover {
+    min-height: 0;
+    padding-top: 3rem;
+    padding-bottom: 3.5rem;
   }
 
-  .btn-container {
-    flex-direction: column;
-    align-items: stretch;
+  /* Designators turn to run along the margin rule, as marginalia does */
+  .margin {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: 0.9rem;
+    padding: 0.4rem 0.7rem 0 0;
   }
 
-  article {
-    width: 100%;
+  .margin__desig,
+  .margin__note {
+    writing-mode: vertical-rl;
+    letter-spacing: 0.2em;
   }
 
-  .arrow {
-    display: none;
-  }
-}
+  /* Cover stacks: copy, then the plate, then the stamp as a corner mark */
+  .cover { grid-template-columns: minmax(0, 1fr); gap: 2.8rem; }
 
-@media screen and (max-width: 480px) {
-  html {
-    font-size: 14px;
-  }
+  .cover__plate { max-width: 380px; }
 
-  .logo {
-    font-size: 1rem;
-  }
+  /* The resume and contact actions must clear the fold, so the spec table
+     drops below them; the stamp closes the page instead of opening it. */
+  .cover__copy .display  { order: 1; }
+  .cover__copy .cover__role { order: 2; }
+  .cover__copy .lede     { order: 3; margin-bottom: 1.6rem; }
+  .cover__copy .actions  { order: 4; }
+  .cover__copy .socials  { order: 5; margin-bottom: 2.4rem; }
+  .cover__copy .specs    { order: 6; margin-bottom: 0; }
 
-  .title {
-    font-size: 2.1rem;
-  }
-
-  .section-header h1 {
-    font-size: 1.7rem;
-  }
-
-  .floating-card {
+  .stamp {
     position: static;
-    margin-top: 1rem;
-    max-width: none;
+    order: 99;
+    align-self: flex-start;
+    margin-top: 2.4rem;
+    transform: rotate(-2.4deg);
   }
 
-  .profile-card img {
-    height: 200px;
+  .about { grid-template-columns: minmax(0, 1fr); gap: 2.8rem; }
+  .about__plate { max-width: 400px; }
+
+  .split,
+  .split--reverse { grid-template-columns: minmax(0, 1fr); gap: 2.4rem; }
+  .split--reverse .split__copy,
+  .split--reverse .figure { order: 0; }
+  .split .taped { max-width: 460px; }
+
+  .plot { grid-template-columns: minmax(0, 1fr); gap: 2rem; }
+  .plot__side {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    flex-wrap: wrap;
+    padding-top: 0;
   }
+  .plot__note { margin: 0; }
+
+  .inventory { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.6rem 2rem; }
+
+  .colophon { padding: 1.8rem 1.25rem 2.4rem; }
 }
 
+/* ---- Single column ---- */
+@media screen and (max-width: 720px) {
+  :root { --margin-w: 42px; }
 
+  .sheet { padding: 3rem 1rem 3rem 0; }
+  .sheet__body,
+  .witness { padding-left: 1rem; }
+
+  .display { font-size: clamp(2.6rem, 12vw, 3.4rem); letter-spacing: -0.03em; }
+
+  .lede { max-width: none; font-size: 1.0625rem; }
+
+  .record__head {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.35rem;
+  }
+  .record__date { grid-column: 1; grid-row: auto; }
+
+  .ruled-list { columns: 1; }
+
+  .inventory { grid-template-columns: minmax(0, 1fr); }
+
+  .signoff { grid-template-columns: minmax(0, 1fr); gap: 1.6rem; }
+
+  .contact li { grid-template-columns: minmax(0, 1fr); gap: 0.25rem; }
+
+  .actions { gap: 0.6rem; }
+  .btn { flex: 1 1 auto; justify-content: center; }
+  .actions--compact .btn { flex: 0 0 auto; }
+
+  .taped::before,
+  .taped::after { width: 68px; height: 20px; }
+
+  .witness {
+    gap: 0.35rem 1.4rem;
+    margin-top: 2.4rem;
+    font-size: 0.6rem;
+  }
+
+  /* Two vertical labels will not fit a 42px gutter; the designator is the
+     one that does wayfinding, so the classification steps aside. */
+  .margin { justify-content: flex-start; }
+  .margin__note { display: none; }
+
+  /* Remaining wide diagrams scroll rather than shrink.
+     The right-edge fade is the affordance that says there is more. */
+  .figure--lead,
+  .figure {
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    mask-image: linear-gradient(90deg, #000 0, #000 calc(100% - 28px), transparent 100%);
+  }
+  .figure .ink-figure { min-width: 460px; }
+  .figure figcaption { min-width: 0; }
+
+  /* A figure with a narrow-screen layout of its own swaps to it rather than
+     scrolling: a 3-stage pipeline showing two stages is a wrong diagram.
+     This must follow .figure above to win the cascade. */
+  .ink-figure--wide  { display: none; }
+  .ink-figure--stack { display: block; }
+
+  .figure--dual {
+    overflow: visible;
+    mask-image: none;
+  }
+  .figure--dual .ink-figure { min-width: 0; }
+}
+
+@media screen and (max-width: 460px) {
+  :root { --margin-w: 34px; }
+
+  body { font-size: 1rem; }
+
+  .sheet { padding: 2.6rem 0.85rem 2.6rem 0; }
+  .sheet__body,
+  .witness { padding-left: 0.85rem; }
+
+  .margin { padding-right: 0.5rem; gap: 0.6rem; }
+
+  .specs__row { grid-template-columns: minmax(0, 1fr); gap: 0.15rem; padding: 0.55rem 0; }
+
+  .socials { gap: 1.2rem; }
+
+  .taped { padding: 1.1rem 0.6rem 0; }
+  .taped::before { left: -6px; }
+  .taped::after { right: -8px; }
+
+  .stamp { transform: rotate(-2deg) scale(0.94); transform-origin: left top; }
+}

@@ -3,297 +3,709 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gabriel Gallo | Portfolio</title>
+    <title>Gabriel Gallo — Electrical Engineering &amp; Computer Science, UC Berkeley</title>
+    <meta name="description" content="Gabriel Gallo, EECS senior at UC Berkeley. A 3-stage pipelined RISC-V processor in SystemVerilog, and a cross-platform app serving 5,000+ users.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&family=Martian+Mono:wdth,wght@75..112.5,400..700&display=swap">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="mediaqueries.css">
     <link rel="icon" href="assets/profile-photo.jpg">
 </head>
 <body>
-    <div class="background-orb orb-one"></div>
-    <div class="background-orb orb-two"></div>
+<!--
+DIRECTION CONTRACT — seed cd0d8f15 (direction/persuade), assigned index 6 of 7
+THESIS: A record, not a pitch. The portfolio is the engineering notebook the work was done in — numbered entries, drawn figures, a signed witness line. It refuses the dark-glass developer portfolio and its logo-tile skill grid.
+OWN-WORLD: Black drafting stock under a cool graphite graticule; oxblood bookcloth spine; bone-white lead; red pen for annotation and the primary action; taped-in photographs; Archivo drafted wide for display, Martian Mono for designators and measured data. Rules and margins, never cards.
+STORY: A recruiter sees an EECS senior working at both ends of the stack, reads four drawn figures that prove it, and leaves with the resume.
+FIRST VIEWPORT: Full-bleed grid page; oxblood spine left, red margin rule; property stamp top right; name drafted at display scale; portrait taped in; DOWNLOAD RESUME in pen and circled in pen; witness block closing the fold.
+FORM: Field Notebook No. 001 — grounded candidate 6 of 7; seed key cd0d8f15.
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md
+-->
 
-    <header class="site-header">
-        <nav id="main-nav">
-            <a class="logo" href="#profile-section">Gabriel Gallo</a>
-            <div>
-                <ul class="links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+<a class="skip-link" href="#entry-about">Skip to contents</a>
+
+<div class="spine" aria-hidden="true">
+    <span class="spine__no">No. 001</span>
+    <span class="spine__rule"></span>
+    <span class="spine__year">MMXXVI</span>
+</div>
+
+<nav class="tabs" aria-label="Sections">
+    <a class="tab" href="#entry-about"><span>About</span></a>
+    <a class="tab" href="#entry-log"><span>Log</span></a>
+    <a class="tab" href="#entry-inventory"><span>Inventory</span></a>
+    <a class="tab" href="#entries"><span>Entries</span></a>
+    <a class="tab" href="#entry-contact"><span>Contact</span></a>
+    <a class="tab tab--action" href="assets/Gabriel_Gallo_Resume_2026_SWE.pdf" target="_blank" rel="noopener"><span>Resume</span></a>
+</nav>
+
+<header class="topbar">
+    <a class="topbar__mark" href="#cover">
+        <span class="topbar__name">G. Gallo</span>
+        <span class="topbar__no">No. 001</span>
+    </a>
+    <button class="topbar__toggle" type="button" aria-expanded="false" aria-controls="topbar-menu" aria-label="Open contents">
+        <span></span><span></span><span></span>
+    </button>
+    <div class="topbar__menu" id="topbar-menu" hidden>
+        <a href="#entry-about">About</a>
+        <a href="#entry-log">Log</a>
+        <a href="#entry-inventory">Inventory</a>
+        <a href="#entries">Entries</a>
+        <a href="#entry-contact">Contact</a>
+        <a class="topbar__menu-action" href="assets/Gabriel_Gallo_Resume_2026_SWE.pdf" target="_blank" rel="noopener">Download resume</a>
+    </div>
+</header>
+
+<main class="page">
+
+    <!-- ============ COVER PAGE ============ -->
+    <section class="sheet sheet--cover" id="cover">
+        <div class="margin">
+            <span class="margin__desig">Pg. 1</span>
+        </div>
+
+        <div class="sheet__body cover">
+            <div class="cover__copy">
+                <p class="stamp" aria-label="Property of Gabriel Gallo, EECS, University of California Berkeley, notebook number 001">
+                    <span class="stamp__line">Property of</span>
+                    <span class="stamp__name">G. Gallo</span>
+                    <span class="stamp__line">EECS &middot; UC Berkeley</span>
+                    <span class="stamp__line">Notebook No. 001</span>
+                </p>
+
+                <h1 class="display">Gabriel&nbsp;Gallo</h1>
+                <p class="cover__role">Electrical Engineering &amp; Computer Science, UC Berkeley</p>
+
+                <p class="lede">I work at both ends of the stack. One entry in this notebook is a
+                    3-stage pipelined RISC-V processor written in SystemVerilog and closed on an
+                    FPGA above 100&nbsp;MHz. The next is a Flutter app I led end to end, published on
+                    both stores, now serving over 5,000 people.</p>
+
+                <dl class="specs">
+                    <div class="specs__row">
+                        <dt>Degree</dt>
+                        <dd>B.S. Electrical Engineering &amp; Computer Science</dd>
+                    </div>
+                    <div class="specs__row">
+                        <dt>Institution</dt>
+                        <dd>University of California, Berkeley</dd>
+                    </div>
+                    <div class="specs__row">
+                        <dt>Expected</dt>
+                        <dd>December 2026</dd>
+                    </div>
+                    <div class="specs__row">
+                        <dt>Standing</dt>
+                        <dd>GPA 3.66 / 4.00</dd>
+                    </div>
+                    <div class="specs__row">
+                        <dt>Seeking</dt>
+                        <dd>Internships and new-grad roles in software, embedded or hardware</dd>
+                    </div>
+                </dl>
+
+                <div class="actions">
+                    <span class="marked">
+                        <a class="btn" href="assets/Gabriel_Gallo_Resume_2026_SWE.pdf" target="_blank" rel="noopener">
+                            Download resume
+                            <svg class="btn__glyph" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M12 15l-4.5-4.5M12 15l4.5-4.5M4 20h16"/></svg>
+                        </a>
+                        <svg class="pen-mark" viewBox="0 0 268 78" preserveAspectRatio="none" aria-hidden="true">
+                            <path class="draw" vector-effect="non-scaling-stroke"
+                                  d="M40 13C122 2 236 7 256 28c14 15-14 38-104 44C68 76 8 68 9 45 10 27 34 16 78 11"/>
+                        </svg>
+                    </span>
+                    <a class="btn btn--outline" href="#entry-contact">
+                        Write to me
+                        <svg class="btn__glyph" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v12H3z"/><path d="M3 7l9 6 9-6"/></svg>
+                    </a>
+                </div>
+
+                <ul class="socials">
+                    <li>
+                        <a href="https://github.com/GGallo42" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24" aria-hidden="true" class="socials__mark"><path fill="currentColor" stroke="none" d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2 0-.3-.5-1.5.2-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.4 4.6 18.4 5 18.4 5c.7 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3Z"/></svg>
+                            <span>GitHub</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/gabriel-gallo-9ba080272/" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24" aria-hidden="true" class="socials__mark"><path fill="currentColor" stroke="none" d="M20.4 20.4h-3.6v-5.6c0-1.3 0-3-1.9-3-1.8 0-2.1 1.4-2.1 2.9v5.7H9.4V9h3.4v1.6h.1a3.8 3.8 0 0 1 3.4-1.9c3.6 0 4.3 2.4 4.3 5.5v6.2ZM5.3 7.4a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2Zm1.8 13H3.5V9h3.6v11.4ZM22.2 0H1.8C.8 0 0 .8 0 1.7v20.6c0 1 .8 1.7 1.8 1.7h20.4c1 0 1.8-.8 1.8-1.7V1.7c0-1-.8-1.7-1.8-1.7Z"/></svg>
+                            <span>LinkedIn</span>
+                        </a>
+                    </li>
                 </ul>
             </div>
-        </nav>
 
-        <nav id="mobile-nav">
-            <a class="logo" href="#profile-section">Gabriel Gallo</a>
-            <div class="mobile-menu">
-                <div class="hamburger-icon" onclick="toggleMenu()">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="mobile-links">
-                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-                </div>
+            <div class="cover__plate">
+                <figure class="taped taped--portrait">
+                    <img src="assets/profile-photo.jpg" alt="Gabriel Gallo" width="520" height="520">
+                    <figcaption>Fig. A. The undersigned.</figcaption>
+                </figure>
             </div>
-        </nav>
-    </header>
+        </div>
 
-    <main>
-        <section id="profile-section" class="hero reveal">
-            <div class="hero-copy">
-                <p class="eyebrow">Hi my name is </p>
-                <h1 class="title">Gabriel Gallo</h1>
-                <p class="section__text__p2">Electrial Engineering and Computer Science Student</p>
-                <div class="btn-container">
-                    <button onclick="window.open('./assets/Gabriel_Gallo_Resume_2026_V1.pdf')" class="btn btn-color-2">Download CV</button>
-                    <button onclick="location.href='./#contact'" class="btn btn-color-1">Contact Me</button>
-                </div>
-                <div class="socials-container">
-                    <button class="socials-btn">
-                        <img src="assets/linkedin.png" alt="LinkedIn" class="icon" onclick="location.href='https://www.linkedin.com/in/gabriel-gallo-9ba080272/'">
-                    </button>
-                    <button class="socials-btn">
-                        <img src="assets/github.png" alt="Github" class="icon" onclick="location.href='https://github.com/GGallo42'">
-                    </button>
-                </div>
-            </div>
-            <div class="hero-visual">
-                <div class="portrait-card">
-                    <img src="assets/profile-photo.jpg" alt="Gabriel Gallo">
-                </div>
-                <div class="floating-card">
-                    <span>2+ years freelance</span>
-                    <strong>Building thoughtful digital experiences</strong>
-                </div>
-            </div>
-        </section>
+        <p class="witness">
+            <span>Recorded by <b>G. Gallo</b></span>
+            <span>Berkeley, California</span>
+            <span>Notebook No. 001, opened 2026</span>
+        </p>
+    </section>
 
-        <section id="about" class="reveal">
-            <div class="section-header">
-                <p>Here's Some More</p>
-                <h1>About Me</h1>
-            </div>
+    <!-- ============ ABOUT ============ -->
+    <section class="sheet" id="entry-about">
+        <div class="margin">
+            <span class="margin__desig">Pg. 2</span>
+            <span class="margin__note">Preface</span>
+        </div>
 
-            <div class="section-container about-grid">
-                <div class="about-visual">
-                    <img src="assets/group-photo.jpg" alt="About Gabriel Gallo">
-                    <div class="visual-pill">UC Berkeley</div>
+        <div class="sheet__body">
+            <h2 class="heading">About the engineer</h2>
+
+            <div class="about">
+                <div class="about__copy">
+                    <p>My name is Gabriel Gallo, and I&rsquo;m a senior studying Electrical Engineering
+                        and Computer Science at UC Berkeley. I&rsquo;m currently passionate about web
+                        development and artificial intelligence, with strong interests in related fields
+                        such as robotics and machine learning.</p>
+                    <p>I&rsquo;m eager to find opportunities where I can keep learning and apply my skills
+                        in real-world settings. I enjoy tackling challenges and always strive to rise to
+                        the occasion.</p>
+
+                    <h3 class="subheading">Coursework on record</h3>
+                    <ul class="ruled-list">
+                        <li>Digital Design and Integrated Circuits</li>
+                        <li>Introduction to Robotics</li>
+                        <li>Data Structures and Algorithms</li>
+                        <li>Introduction to Full-Stack Development</li>
+                        <li>Discrete Mathematics and Probability</li>
+                        <li>Computer Security</li>
+                    </ul>
                 </div>
-                <div class="about-content">
-                    <div class="about-me-banner">
-                        <div class="banner">
-                            <img src="assets/experience.png" alt="Experience">
-                            <h3>Experience</h3>
-                            <p>2+ years freelance work.</p>
-                        </div>
-                        <div class="banner">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/The_University_of_California_Berkeley_1868.svg" alt="UC Berkeley Seal">
-                            <h3>Education</h3>
-                            <p>B.S Electrical Engineering and Computer Science <br> UC Berkeley</p>
-                        </div>
-                    </div>
-                    <div class="about-me-paragraph">
-                        <p>Hello! My name is Gabriel Gallo, and I’m a senior studying Electrical Engineering and Computer Science at UC Berkeley. I’m currently passionate about web development and artificial intelligence, with strong interests in related fields such as robotics and machine learning. I’m eager to find opportunities where I can continue learning and apply my skills in real-world settings. I enjoy tackling challenges and always strive to rise to the occasion.</p>
-                    </div>
+
+                <div class="about__plate">
+                    <figure class="taped taped--wide">
+                        <img src="assets/group-photo.jpg" alt="Gabriel Gallo with his project team at UC Berkeley" width="640" height="800" loading="lazy">
+                        <figcaption>Fig. B. Berkeley, with the team.</figcaption>
+                    </figure>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <img src="assets/down-arrow.png" alt="Next Section" onclick="location.href='./#experience'" class="arrow icon">
-        </section>
+    <!-- ============ LOG / EXPERIENCE ============ -->
+    <section class="sheet" id="entry-log">
+        <div class="margin">
+            <span class="margin__desig">Pg. 3</span>
+            <span class="margin__note">Employment</span>
+        </div>
 
-        <section id="experience" class="reveal">
-            <div class="section-header">
-                <p>Here's Some Info On My</p>
-                <h1>Experience</h1>
-            </div>
+        <div class="sheet__body">
+            <h2 class="heading">Log of work</h2>
 
-            <div class="section-container">
-                <div class="about-containers">
-                    <div class="experience-details">
-                        <h3 class="exp-header">Languages</h3>
-                        <div class="exp-container">
-                            <article>
-                                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/html5.svg" alt="HTML" class="skill-icon">
-                                <div>
-                                    <h3>HTML</h3>
-                                </div>
-                            </article>
-                            <article>
-                                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/css.svg" alt="CSS" class="skill-icon">
-                                <div>
-                                    <h3>CSS</h3>
-                                </div>
-                            </article>
-                            <article>
-                                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/python.svg" alt="Python" class="skill-icon">
-                                <div>
-                                    <h3>Python</h3>
-                                </div>
-                            </article>
-                            <article>
-                                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/java.svg" alt="Java" class="skill-icon">
-                                <div>
-                                    <h3>Java</h3>
-                                </div>
-                            </article>
-                            <article>
-                                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/mysql.svg" alt="SQL" class="skill-icon">
-                                <div>
-                                    <h3>SQL</h3>
-                                </div>
-                            </article>
-                            <article>
-                                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/javascript.svg" alt="JavaScript" class="skill-icon">
-                                <div>
-                                    <h3>JavaScript</h3>
-                                </div>
-                            </article>
-                            <article>
-                                <img src="https://api.iconify.design/mdi:chip.svg" alt="SystemVerilog" class="skill-icon">
-                                <div>
-                                    <h3>SystemVerilog</h3>
-                                </div>
-                            </article>
-                            <article>
-                                <img src="https://cdn.simpleicons.org/riscv" alt="RISC-V" class="skill-icon">
-                                <div>
-                                    <h3>RISC-V</h3>
-                                </div>
-                            </article>
-                            <article>
-                                <img src="https://cdn.simpleicons.org/go" alt="Go" class="skill-icon">
-                                <div>
-                                    <h3>Go</h3>
-                                </div>
-                            </article>
-                        </div>
-                    </div>
+            <article class="record">
+                <header class="record__head">
+                    <h3 class="record__title">Software Engineer</h3>
+                    <p class="record__org">UNIFIBD, San Jose, California</p>
+                    <p class="record__date"><time datetime="2025-05">May 2025</time> &ndash; <time datetime="2025-08">Aug 2025</time></p>
+                </header>
 
-                    <div class="experience-details">
-                        <h3 class="exp-header">Tools and Frameworks</h3>
-                        <div class="exp-container">
-                            <article>
-                                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/git.svg" alt="Git" class="skill-icon">
-                                <div>
-                                    <h3>Git</h3>
-                                </div>
-                            </article>
-                            <article>
-                                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/django.svg" alt="Django" class="skill-icon">
-                                <div>
-                                    <h3>Django</h3>
-                                </div>
-                            </article>
-                            <article>
-                                <img src="https://cdn.simpleicons.org/postgresql" alt="PostgreSQL" class="skill-icon">
-                                <div>
-                                    <h3>PostgreSQL</h3>
-                                </div>
-                            </article>
-                            <article>
-                                <img src="https://cdn.simpleicons.org/node.js" alt="Node.js" class="skill-icon">
-                                <div>
-                                    <h3>Node.js</h3>
-                                </div>
-                            </article>
-                            <article>
-                                <img src="https://cdn.simpleicons.org/numpy" alt="NumPy" class="skill-icon">
-                                <div>
-                                    <h3>NumPy</h3>
-                                </div>
-                            </article>
-                            <article>
-                                <img src="https://api.iconify.design/mdi:robot-industrial.svg" alt="ROS2" class="skill-icon">
-                                <div>
-                                    <h3>ROS2</h3>
-                                </div>
-                            </article>
-                            <article>
-                                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/flutter.svg" alt="Flutter" class="skill-icon">
-                                <div>
-                                    <h3>Flutter</h3>
-                                </div>
-                            </article>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <img src="assets/down-arrow.png" alt="Next Section" onclick="location.href='./#projects'" class="arrow icon">
-        </section>
-
-        <section id="projects" class="reveal">
-            <div class="section-header">
-                <p>Check Out My</p>
-                <h1>Projects</h1>
-            </div>
-
-            <div class="section-container">
-                <div class="projects">
-                    <div class="profile-card">
-                        <img src="assets/icon.png" alt="Project One">
-                        <div class="card-content">
-                            <h2>IBD Digest</h2>
-                            <div class="btn-container">
-                                <button class="btn btn-color-2 projects-btn" onclick="location.href='https://apps.apple.com/us/app/the-ibd-digest/id6473455443'">iOS</button>
-                                <button class="btn btn-color-2 projects-btn" onclick="location.href='https://play.google.com/store/apps/details?id=com.unifibd.app'">Android</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="profile-card">
-                        <img src="assets/TurtleBot.png" alt="TurtleBot">
-                        <div class="card-content">
-                            <h2>TurtleBot Interceptor</h2>
-                            <div class="btn-container">
-                                <button class="btn btn-color-2 projects-btn" onclick="location.href='https://biancanev.github.io/eecs106a-finalproject/website/index.html'">Website</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <img src="assets/down-arrow.png" alt="Next Section" onclick="location.href='./#contact'" class="arrow icon">
-        </section>
-
-        <section id="contact" class="reveal">
-            <div class="section-header">
-                <p>Feel Free To Reach Out</p>
-                <h1>Contact Me</h1>
-            </div>
-
-            <div class="section-container">
-                <div class="contact-container">
-                    <div class="contact">
-                        <img src="assets/email.png" alt="Email" class="icon">
-                        <p><a href="mailto:gabriel.gallo.jr@gmail.com">gabriel.gallo.jr@gmail.com</a></p>
-                    </div>
-                    <div class="contact">
-                        <img src="assets/linkedin.png" alt="LinkedIn" class="icon">
-                        <p><a href="https://www.linkedin.com/in/gabriel-gallo-9ba080272/">LinkedIn</a></p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <nav>
-            <div>
-                <ul class="links footer-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                <ul class="findings">
+                    <li>Led end-to-end development of a cross-platform mobile application supporting
+                        people living with Crohn&rsquo;s disease, reaching over <b>5,000 users</b>.</li>
+                    <li>Migrated the legacy Swift iOS app to <b>Flutter</b>, consolidating iOS and Android
+                        into a single codebase and doubling platform reach.</li>
+                    <li>Published and maintained the app on the Apple App Store and Google Play.</li>
+                    <li>Cut load times by <b>30%</b> for a smoother, more responsive experience.</li>
+                    <li>Collaborated with a team of three engineers, running cross-device testing to keep
+                        the experience consistent across both platforms.</li>
                 </ul>
-            </div>
-        </nav>
-    </footer>
 
-    <script src="script.js"></script>
+                <div class="plot">
+                    <figure class="figure">
+                        <svg class="ink-figure" viewBox="80 20 350 200" role="img" aria-label="Measured cold-start time before and after the Flutter migration: the second bar is 30 percent shorter than the first.">
+                            <g class="ink">
+                                <path d="M96 30v160h330"/>
+                            </g>
+                            <g class="ink-fill">
+                                <rect x="96" y="52" width="240" height="42"/>
+                            </g>
+                            <g class="hatch">
+                                <rect x="96" y="112" width="168" height="42"/>
+                            </g>
+                            <g class="ink">
+                                <rect x="96" y="52" width="240" height="42" class="draw"/>
+                                <rect x="96" y="112" width="168" height="42" class="draw"/>
+                            </g>
+                            <g class="annot">
+                                <text x="348" y="78">before</text>
+                                <text x="276" y="138">after migration</text>
+                                <text x="96" y="212" class="annot--axis">Application cold start (relative)</text>
+                            </g>
+                            <g class="pen">
+                                <path d="M264 168v18M336 168v18" class="draw"/>
+                                <path d="M264 177h72" class="draw"/>
+                                <path d="M336 177l-9-4M336 177l-9 4M264 177l9-4M264 177l9 4" class="draw"/>
+                                <text x="348" y="181">&minus;30%</text>
+                            </g>
+                        </svg>
+                        <figcaption>Fig. C. Cold-start time, measured before and after the Flutter migration.</figcaption>
+                    </figure>
+
+                    <div class="plot__side">
+                        <figure class="taped taped--chip">
+                            <img src="assets/icon.png" alt="The IBD Digest app icon" width="220" height="220" loading="lazy">
+                            <figcaption>The IBD Digest</figcaption>
+                        </figure>
+                        <p class="plot__note">Shipped and live on both stores.</p>
+                        <div class="actions actions--compact">
+                            <a class="btn btn--outline btn--sm" href="https://apps.apple.com/us/app/the-ibd-digest/id6473455443" target="_blank" rel="noopener">App&nbsp;Store</a>
+                            <a class="btn btn--outline btn--sm" href="https://play.google.com/store/apps/details?id=com.unifibd.app" target="_blank" rel="noopener">Google&nbsp;Play</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- ============ INVENTORY / SKILLS ============ -->
+    <section class="sheet" id="entry-inventory">
+        <div class="margin">
+            <span class="margin__desig">Pg. 4</span>
+            <span class="margin__note">Materials</span>
+        </div>
+
+        <div class="sheet__body">
+            <h2 class="heading">Instruments &amp; materials</h2>
+            <p class="sheet__intro">Anything carrying a reference is used in the entry named beside it,
+                on the hardware pages as often as the software ones. The rest I use, but this
+                notebook does not happen to show.</p>
+
+            <div class="inventory">
+                <section class="inventory__group">
+                    <h3 class="inventory__label">Languages</h3>
+                    <ul>
+                        <li><span class="inventory__name">Python</span><span class="inventory__ref">E02 · E03</span></li>
+                        <li><span class="inventory__name">C / C++</span></li>
+                        <li><span class="inventory__name">SystemVerilog</span><span class="inventory__ref">E01</span></li>
+                        <li><span class="inventory__name">Assembly</span><span class="inventory__ref">E01</span></li>
+                        <li><span class="inventory__name">Go</span><span class="inventory__ref">E04</span></li>
+                        <li><span class="inventory__name">Java</span></li>
+                        <li><span class="inventory__name">JavaScript</span></li>
+                        <li><span class="inventory__name">TypeScript</span><span class="inventory__ref">E02</span></li>
+                        <li><span class="inventory__name">SQL</span><span class="inventory__ref">E02</span></li>
+                        <li><span class="inventory__name">HTML / CSS</span></li>
+                    </ul>
+                </section>
+
+                <section class="inventory__group">
+                    <h3 class="inventory__label">Frameworks &amp; libraries</h3>
+                    <ul>
+                        <li><span class="inventory__name">ROS2</span><span class="inventory__ref">E03</span></li>
+                        <li><span class="inventory__name">Flutter</span><span class="inventory__ref">Log</span></li>
+                        <li><span class="inventory__name">Django</span><span class="inventory__ref">E02</span></li>
+                        <li><span class="inventory__name">NumPy</span><span class="inventory__ref">E03</span></li>
+                        <li><span class="inventory__name">MongoDB</span><span class="inventory__ref">E02</span></li>
+                        <li><span class="inventory__name">React.js</span></li>
+                        <li><span class="inventory__name">Node.js</span></li>
+                        <li><span class="inventory__name">Express.js</span></li>
+                    </ul>
+                </section>
+
+                <section class="inventory__group">
+                    <h3 class="inventory__label">Tools &amp; instruments</h3>
+                    <ul>
+                        <li><span class="inventory__name">Xilinx Vivado</span><span class="inventory__ref">E01</span></li>
+                        <li><span class="inventory__name">PYNQ (AUP-ZU3)</span><span class="inventory__ref">E01</span></li>
+                        <li><span class="inventory__name">AWS</span><span class="inventory__ref">E02</span></li>
+                        <li><span class="inventory__name">Git</span></li>
+                        <li><span class="inventory__name">Firebase</span></li>
+                        <li><span class="inventory__name">Cloudflare</span></li>
+                        <li><span class="inventory__name">Netlify</span></li>
+                        <li><span class="inventory__name">Cursor</span></li>
+                        <li><span class="inventory__name">GitHub Copilot</span></li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ ENTRIES / PROJECTS ============ -->
+    <div id="entries">
+
+    <section class="sheet" id="entry-01">
+        <div class="margin">
+            <span class="margin__desig">Entry 01</span>
+            <span class="margin__note">Hardware</span>
+        </div>
+
+        <div class="sheet__body">
+            <h2 class="heading">RISC-V 3-stage pipelined CPU</h2>
+            <p class="stack">SystemVerilog &middot; Xilinx Vivado &middot; PYNQ (AUP-ZU3) &middot; Zephyr RTOS</p>
+
+            <figure class="figure figure--lead figure--dual">
+                <svg class="ink-figure ink-figure--wide" viewBox="0 0 720 300" role="img" aria-label="Block diagram of a three-stage RISC-V pipeline: fetch, decode and execute, memory and writeback, with a forwarding path returning from writeback to execute and a UART tether to the BIOS.">
+                    <g class="ink">
+                        <rect x="52" y="86" width="146" height="76" class="draw"/>
+                        <rect x="272" y="86" width="176" height="76" class="draw"/>
+                        <rect x="522" y="86" width="146" height="76" class="draw"/>
+
+                        <path d="M226 108v32M234 108v32" class="draw"/>
+                        <path d="M476 108v32M484 108v32" class="draw"/>
+
+                        <path d="M198 124h20M242 124h30M448 124h20M492 124h30" class="draw"/>
+                        <path d="M272 124l-10-5M272 124l-10 5M522 124l-10-5M522 124l-10 5" class="draw"/>
+
+                        <rect x="228" y="228" width="264" height="44" class="draw"/>
+                        <path d="M360 194v34" class="draw"/>
+                        <path d="M360 228l-5-10M360 228l5-10" class="draw"/>
+                    </g>
+
+                    <g class="label">
+                        <text x="125" y="120" text-anchor="middle">IF</text>
+                        <text x="360" y="120" text-anchor="middle">ID / EX</text>
+                        <text x="595" y="120" text-anchor="middle">MEM / WB</text>
+                    </g>
+                    <g class="annot">
+                        <text x="125" y="146" text-anchor="middle">instruction fetch</text>
+                        <text x="360" y="146" text-anchor="middle">decode &amp; execute</text>
+                        <text x="595" y="146" text-anchor="middle">memory &amp; writeback</text>
+                        <text x="230" y="180" text-anchor="middle">pipe reg</text>
+                        <text x="480" y="180" text-anchor="middle">pipe reg</text>
+                        <text x="360" y="256" text-anchor="middle">UART &harr; BIOS tether &middot; Xilinx ILA</text>
+                    </g>
+
+                    <g class="pen">
+                        <path d="M595 86v-32H360v20" class="draw"/>
+                        <path d="M360 86l-5-12M360 86l5-12" class="draw"/>
+                        <text x="470" y="44" text-anchor="middle">forwarding: data &amp; control hazards resolved</text>
+                    </g>
+
+                    <g class="pen pen--stat">
+                        <text x="52" y="290">CPI &lt; 1.2</text>
+                        <text x="192" y="290">f &gt; 100 MHz</text>
+                        <text x="352" y="290">Zynq UltraScale+</text>
+                        <text x="560" y="290">Zephyr RTOS shell</text>
+                    </g>
+                </svg>
+
+                <svg class="ink-figure ink-figure--stack" viewBox="0 0 360 556" role="img" aria-label="The same three-stage pipeline drawn vertically: instruction fetch, then decode and execute, then memory and writeback, with a forwarding path returning from writeback to execute and a UART tether below.">
+                    <g class="ink">
+                        <rect x="86" y="34" width="188" height="60" class="draw"/>
+                        <rect x="86" y="164" width="188" height="60" class="draw"/>
+                        <rect x="86" y="294" width="188" height="60" class="draw"/>
+
+                        <path d="M180 94v18M180 146v18" class="draw"/>
+                        <path d="M180 164l-5-10M180 164l5-10" class="draw"/>
+                        <path d="M180 224v18M180 276v18" class="draw"/>
+                        <path d="M180 294l-5-10M180 294l5-10" class="draw"/>
+
+                        <path d="M132 118h96M132 126h96" class="draw"/>
+                        <path d="M132 248h96M132 256h96" class="draw"/>
+
+                        <rect x="40" y="410" width="280" height="42" class="draw"/>
+                        <path d="M180 354v56" class="draw"/>
+                        <path d="M180 410l-5-10M180 410l5-10" class="draw"/>
+                    </g>
+
+                    <g class="label">
+                        <text x="180" y="62" text-anchor="middle">IF</text>
+                        <text x="180" y="192" text-anchor="middle">ID / EX</text>
+                        <text x="180" y="322" text-anchor="middle">MEM / WB</text>
+                    </g>
+                    <g class="annot">
+                        <text x="180" y="82" text-anchor="middle">instruction fetch</text>
+                        <text x="180" y="212" text-anchor="middle">decode &amp; execute</text>
+                        <text x="180" y="342" text-anchor="middle">memory &amp; writeback</text>
+                        <text x="240" y="126" text-anchor="start">pipe reg</text>
+                        <text x="240" y="256" text-anchor="start">pipe reg</text>
+                        <text x="180" y="437" text-anchor="middle">UART &harr; BIOS tether &middot; Xilinx ILA</text>
+                    </g>
+
+                    <g class="pen">
+                        <path d="M274 324h56V194h-46" class="draw"/>
+                        <path d="M284 194l10-5M284 194l10 5" class="draw"/>
+                        <text x="300" y="264" text-anchor="middle" transform="rotate(90 300 264)">forwarding</text>
+                    </g>
+
+                    <g class="pen pen--stat">
+                        <text x="10" y="490">CPI &lt; 1.2</text>
+                        <text x="150" y="490">f &gt; 100 MHz</text>
+                        <text x="10" y="516">Zynq UltraScale+</text>
+                        <text x="150" y="516">Zephyr RTOS shell</text>
+                    </g>
+                </svg>
+                <figcaption>Fig. 1. Pipeline organisation, with the forwarding path drawn in red.</figcaption>
+            </figure>
+
+            <ul class="findings">
+                <li>Designed and implemented a 3-stage pipelined RISC-V processor in SystemVerilog,
+                    targeting a <b>Zynq UltraScale+</b> FPGA.</li>
+                <li>Resolved data and control hazards in the pipeline to hit a target of
+                    <b>CPI&nbsp;&lt;&nbsp;1.2</b> at a clock above <b>100&nbsp;MHz</b>.</li>
+                <li>Integrated a UART interface for BIOS tethering and hardware-in-the-loop debugging
+                    with the Xilinx ILA.</li>
+                <li>Implemented support for the <b>Zephyr RTOS</b> shell, demonstrating system-level
+                    integration of hardware and software.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="sheet" id="entry-02">
+        <div class="margin">
+            <span class="margin__desig">Entry 02</span>
+            <span class="margin__note">Full stack</span>
+        </div>
+
+        <div class="sheet__body">
+            <h2 class="heading">Flow</h2>
+            <p class="stack">Angular &middot; TypeScript &middot; SCSS &middot; Django &middot; MongoDB &middot; AWS &middot; Gemini API</p>
+
+            <figure class="figure figure--lead">
+                <svg class="ink-figure" viewBox="0 0 720 210" role="img" aria-label="System diagram: an Angular client calls a Django REST API, which reads a datastore and dispatches background jobs to Celery and Redis workers that call the Gemini API and NLP libraries. Google OAuth 2.0 guards the client.">
+                    <g class="ink">
+                        <rect x="24" y="66" width="140" height="62" class="draw"/>
+                        <rect x="238" y="66" width="160" height="62" class="draw"/>
+                        <rect x="472" y="20" width="164" height="56" class="draw"/>
+                        <rect x="472" y="118" width="164" height="56" class="draw"/>
+
+                        <path d="M164 97h68" class="draw"/>
+                        <path d="M238 97l-10-5M238 97l-10 5" class="draw"/>
+                        <path d="M398 97h34l0-49h34" class="draw"/>
+                        <path d="M472 48l-10-5M472 48l-10 5" class="draw"/>
+                        <path d="M398 97h34l0 49h34" class="draw"/>
+                        <path d="M472 146l-10-5M472 146l-10 5" class="draw"/>
+                    </g>
+                    <g class="label">
+                        <text x="94" y="94" text-anchor="middle">Angular</text>
+                        <text x="318" y="94" text-anchor="middle">Django REST</text>
+                        <text x="554" y="48" text-anchor="middle">Celery + Redis</text>
+                        <text x="554" y="146" text-anchor="middle">MongoDB / SQL</text>
+                    </g>
+                    <g class="annot">
+                        <text x="94" y="114" text-anchor="middle">client</text>
+                        <text x="318" y="114" text-anchor="middle">API</text>
+                        <text x="554" y="66" text-anchor="middle">Gemini &middot; spaCy &middot; NLTK</text>
+                        <text x="554" y="164" text-anchor="middle">datastore</text>
+                    </g>
+                    <g class="pen">
+                        <path d="M94 66V38h60" class="draw"/>
+                        <text x="160" y="42">Google OAuth 2.0</text>
+                    </g>
+                </svg>
+                <figcaption>Fig. 2. Request path, with the background workers on the upper branch.</figcaption>
+            </figure>
+
+            <ul class="findings">
+                <li>An authenticated dashboard that moves between email and calendar in one place,
+                    with collapsible sidebar navigation.</li>
+                <li>Secure sign-in through <b>Google OAuth 2.0</b> via django-allauth.</li>
+                <li>AI-powered mail tools: the backend summarises, categorises and detects events in
+                    message content using NLP (spaCy, NLTK) and the Gemini API.</li>
+                <li>Built on Django and Django REST Framework with PostgreSQL, using
+                    <b>Celery and Redis</b> for background task processing.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="sheet" id="entry-03">
+        <div class="margin">
+            <span class="margin__desig">Entry 03</span>
+            <span class="margin__note">Robotics</span>
+        </div>
+
+        <div class="sheet__body">
+            <h2 class="heading">TurtleBot Interceptor</h2>
+            <p class="stack">Python &middot; ROS2 &middot; OpenCV &middot; YOLO &middot; SLAM &middot; NumPy &middot; EECS&nbsp;106A</p>
+
+            <figure class="figure figure--lead">
+                <svg class="ink-figure" viewBox="0 0 720 320" role="img" aria-label="Intercept geometry, drawn schematically: the robot's path curves from its start position to meet a moving cone, with the model-predictive control prediction as a dashed red line and the intercept point marked.">
+                    <g class="ink">
+                        <path d="M64 28v244h600"/>
+                        <path d="M64 272h-0M124 272v8M244 272v8M364 272v8M484 272v8M604 272v8"/>
+                        <path d="M64 212h-8M64 152h-8M64 92h-8"/>
+                    </g>
+
+                    <g class="ink">
+                        <rect x="72" y="238" width="26" height="20" class="draw"/>
+                        <circle cx="78" cy="262" r="5" class="draw"/>
+                        <circle cx="92" cy="262" r="5" class="draw"/>
+                        <path d="M104 240C 196 236, 268 210, 330 168 S 434 104, 486 84" class="draw"/>
+                    </g>
+
+                    <g class="pen">
+                        <path d="M636 214C 592 190, 546 140, 500 92" class="draw dashed"/>
+                        <path d="M486 84 l 16 4 M486 84 l 4 16" class="draw"/>
+                        <circle cx="492" cy="88" r="20" class="draw"/>
+                        <path d="M478 74l28 28M506 74l-28 28" class="draw"/>
+                    </g>
+
+                    <g class="ink">
+                        <path d="M628 226l16 24h-32z" class="draw"/>
+                    </g>
+
+                    <g class="label">
+                        <text x="512" y="60">intercept</text>
+                    </g>
+                    <g class="annot">
+                        <text x="72" y="228">start</text>
+                        <text x="600" y="268" text-anchor="end">moving cone</text>
+                        <text x="180" y="200">observed path &mdash; EKF + MCL</text>
+                        <text x="64" y="300" class="annot--axis">Floor plane, indoor test grid</text>
+                    </g>
+                    <g class="pen">
+                        <text x="560" y="164">MPC prediction</text>
+                    </g>
+                    <g class="pen pen--stat">
+                        <text x="330" y="300">detection 78% &rarr; 93%</text>
+                        <text x="530" y="300">intercept &minus;1.2 s</text>
+                    </g>
+                </svg>
+                <figcaption>Fig. 3. Intercept geometry, drawn schematically. The measured values are from the run logs; the curve is not.</figcaption>
+            </figure>
+
+            <div class="split split--single">
+                <div class="split__copy">
+                    <ul class="findings">
+                        <li>Built a Python/OpenCV cone detector with colour and shape filtering plus distance
+                            estimation, improving precision from <b>78% to 93%</b> in varied indoor lighting.</li>
+                        <li>Engineered an <b>MPC controller</b> integrating an Extended Kalman Filter, Monte
+                            Carlo Localisation, local occupancy grids and live cone detections, cutting
+                            intercept time by roughly <b>1.2&nbsp;s</b> and path oscillation by about
+                            <b>30%</b>.</li>
+                        <li>Instrumented visualisation for cones, MPC trajectories and obstacles, reducing
+                            field-test debugging time by around 25%.</li>
+                    </ul>
+                    <div class="actions actions--compact">
+                        <a class="btn btn--outline btn--sm" href="https://biancanev.github.io/eecs106a-finalproject/website/index.html" target="_blank" rel="noopener">Project write-up</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sheet" id="entry-04">
+        <div class="margin">
+            <span class="margin__desig">Entry 04</span>
+            <span class="margin__note">Systems</span>
+        </div>
+
+        <div class="sheet__body">
+            <h2 class="heading">Secure file storage system</h2>
+            <p class="stack">Go &middot; AES-CTR &middot; RSA-OAEP &middot; HMAC-SHA512 &middot; Integration testing</p>
+
+            <div class="split split--reverse">
+                <div class="split__copy">
+                    <ul class="findings">
+                        <li>Architected a decentralised, stateless file-storage client in Go on top of an
+                            <b>untrusted remote datastore</b>, holding total confidentiality and integrity
+                            against a global network adversary.</li>
+                        <li>Designed a dynamic multi-user sharing hierarchy around a centralised sharing
+                            tree, decoupling file appends from metadata growth to satisfy a strict
+                            bandwidth-efficiency requirement.</li>
+                        <li>Authored integration and tampering test suites covering empty files,
+                            multi-device synchronisation and structural datastore corruption.</li>
+                    </ul>
+                </div>
+
+                <figure class="figure">
+                    <svg class="ink-figure" viewBox="0 0 620 300" role="img" aria-label="A sharing tree: one owner shares a file with two users, who each re-share with another, all inside a dashed boundary marking the untrusted datastore.">
+                        <g class="pen">
+                            <path d="M20 20h580v260H20z" class="draw dashed"/>
+                            <text x="32" y="44">untrusted datastore</text>
+                        </g>
+                        <g class="ink">
+                            <rect x="252" y="72" width="116" height="46" class="draw"/>
+                            <rect x="120" y="176" width="106" height="42" class="draw"/>
+                            <rect x="394" y="176" width="106" height="42" class="draw"/>
+                            <rect x="394" y="240" width="106" height="34" class="draw"/>
+
+                            <path d="M290 118l-117 58" class="draw"/>
+                            <path d="M330 118l117 58" class="draw"/>
+                            <path d="M447 218v22" class="draw"/>
+                        </g>
+                        <g class="label">
+                            <text x="310" y="100" text-anchor="middle">owner</text>
+                            <text x="173" y="202" text-anchor="middle">user B</text>
+                            <text x="447" y="202" text-anchor="middle">user C</text>
+                            <text x="447" y="262" text-anchor="middle">user D</text>
+                        </g>
+                        <g class="annot">
+                            <text x="196" y="146" text-anchor="middle">RSA-OAEP</text>
+                            <text x="424" y="146" text-anchor="middle">RSA-OAEP</text>
+                            <text x="310" y="66" text-anchor="middle">AES-CTR file &middot; HMAC-SHA512</text>
+                        </g>
+                        <g class="pen pen--stat">
+                            <text x="120" y="252">revocation cuts the subtree</text>
+                        </g>
+                    </svg>
+                    <figcaption>Fig. 4. The sharing tree: revoking a node severs everything beneath it.</figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    </div>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="sheet sheet--close" id="entry-contact">
+        <div class="margin">
+            <span class="margin__desig">Pg. 9</span>
+            <span class="margin__note">Signature</span>
+        </div>
+
+        <div class="sheet__body">
+            <h2 class="heading">Countersign</h2>
+            <p class="sheet__intro">The notebook is open. If any entry is worth a conversation,
+                the fastest route is email. I answer the same day.</p>
+
+            <ul class="contact">
+                <li>
+                    <span class="contact__label">Email</span>
+                    <a class="contact__value" href="mailto:gabriel.gallo.jr@gmail.com">gabriel.gallo.jr@gmail.com</a>
+                </li>
+                <li>
+                    <span class="contact__label">LinkedIn</span>
+                    <a class="contact__value" href="https://www.linkedin.com/in/gabriel-gallo-9ba080272/" target="_blank" rel="noopener">in/gabriel-gallo</a>
+                </li>
+                <li>
+                    <span class="contact__label">GitHub</span>
+                    <a class="contact__value" href="https://github.com/GGallo42" target="_blank" rel="noopener">GGallo42</a>
+                </li>
+                <li>
+                    <span class="contact__label">Resume</span>
+                    <a class="contact__value" href="assets/Gabriel_Gallo_Resume_2026_SWE.pdf" target="_blank" rel="noopener">Gabriel_Gallo_Resume_2026.pdf</a>
+                </li>
+            </ul>
+
+            <div class="signoff">
+                <div class="signoff__block">
+                    <span class="signoff__rule"></span>
+                    <span class="signoff__label">Recorded by</span>
+                    <span class="signoff__value">Gabriel Gallo</span>
+                </div>
+                <div class="signoff__block">
+                    <span class="signoff__rule"></span>
+                    <span class="signoff__label">Witnessed by</span>
+                    <span class="signoff__value">&nbsp;</span>
+                </div>
+                <div class="signoff__block">
+                    <span class="signoff__rule"></span>
+                    <span class="signoff__label">Date</span>
+                    <span class="signoff__value">2026</span>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="colophon">
+    <p>End of notebook No. 001. Gabriel Gallo, Berkeley, California.</p>
+    <p class="colophon__set">Set in Archivo and Martian Mono. Figures drawn by hand in SVG.</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
