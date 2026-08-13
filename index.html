@@ -391,52 +391,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
                     </g>
                 </svg>
 
-                <svg class="ink-figure ink-figure--stack" viewBox="0 0 360 556" role="img" aria-label="The same three-stage pipeline drawn vertically: instruction fetch, then decode and execute, then memory and writeback, with a forwarding path returning from writeback to execute and a UART tether below.">
-                    <g class="ink">
-                        <rect x="86" y="34" width="188" height="60" class="draw"/>
-                        <rect x="86" y="164" width="188" height="60" class="draw"/>
-                        <rect x="86" y="294" width="188" height="60" class="draw"/>
-
-                        <path d="M180 94v18M180 146v18" class="draw"/>
-                        <path d="M180 164l-5-10M180 164l5-10" class="draw"/>
-                        <path d="M180 224v18M180 276v18" class="draw"/>
-                        <path d="M180 294l-5-10M180 294l5-10" class="draw"/>
-
-                        <path d="M132 118h96M132 126h96" class="draw"/>
-                        <path d="M132 248h96M132 256h96" class="draw"/>
-
-                        <rect x="40" y="410" width="280" height="42" class="draw"/>
-                        <path d="M180 354v56" class="draw"/>
-                        <path d="M180 410l-5-10M180 410l5-10" class="draw"/>
-                    </g>
-
-                    <g class="label">
-                        <text x="180" y="62" text-anchor="middle">IF</text>
-                        <text x="180" y="192" text-anchor="middle">ID / EX</text>
-                        <text x="180" y="322" text-anchor="middle">MEM / WB</text>
-                    </g>
-                    <g class="annot">
-                        <text x="180" y="82" text-anchor="middle">instruction fetch</text>
-                        <text x="180" y="212" text-anchor="middle">decode &amp; execute</text>
-                        <text x="180" y="342" text-anchor="middle">memory &amp; writeback</text>
-                        <text x="240" y="126" text-anchor="start">pipe reg</text>
-                        <text x="240" y="256" text-anchor="start">pipe reg</text>
-                        <text x="180" y="437" text-anchor="middle">UART &harr; BIOS tether &middot; Xilinx ILA</text>
-                    </g>
-
-                    <g class="pen">
-                        <path d="M274 324h56V194h-46" class="draw"/>
-                        <path d="M284 194l10-5M284 194l10 5" class="draw"/>
-                        <text x="300" y="264" text-anchor="middle" transform="rotate(90 300 264)">forwarding</text>
-                    </g>
-
-                    <g class="pen pen--stat">
-                        <text x="10" y="490">CPI &lt; 1.2</text>
-                        <text x="150" y="490">f &gt; 100 MHz</text>
-                        <text x="10" y="516">Zynq UltraScale+</text>
-                        <text x="150" y="516">Zephyr RTOS shell</text>
-                    </g>
-                </svg>
+                
                 <figcaption>Fig. 1. Pipeline organisation, with the forwarding path drawn in red.</figcaption>
             </figure>
 
